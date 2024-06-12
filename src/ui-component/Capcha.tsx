@@ -26,17 +26,16 @@ export default forwardRef<{ refresh?: () => void }>(function Captcha(_, ref) {
 
     return (
         <Stack direction="row" gap={1} height={50} alignItems="center">
-            <RefreshButton type="button" onClick={refresh}>
-                <CachedIcon />
-            </RefreshButton>
             <img
-                // src={`${AUTH_GATE_API}/captcha/generator/${APP_CODE}/${CAPT_KEY}?ran=${r}`}
                 src={`${AUTH_GATE_API}/captcha/generator/${APP_CODE}/${CAPT_KEY}?ran=${r}`}
                 alt="captcha"
                 width={100}
                 height={50}
                 style={{ borderRadius: 8 }}
             />
+            <RefreshButton type="button" onClick={refresh}>
+                <CachedIcon />
+            </RefreshButton>
         </Stack>
     );
 });

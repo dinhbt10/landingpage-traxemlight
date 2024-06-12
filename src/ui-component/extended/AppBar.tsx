@@ -18,15 +18,17 @@ import {
     useScrollTrigger,
     Button
 } from '@mui/material';
+import CallIcon from '@mui/icons-material/Call';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { FormattedMessage } from 'react-intl';
 
 // project imports
 import Logo from 'ui-component/Logo';
 
 // assets
 import { IconBook, IconCreditCard, IconDashboard, IconHome2 } from '@tabler/icons';
-import menu from 'assets/images/landing/Home/Menu.svg';
-import LogoText2 from 'pages/LogoText2';
+import menuTXL from 'assets/images/landing/Home/MenuTXL.svg';
 
 // elevation scroll
 interface ElevationScrollProps {
@@ -55,16 +57,13 @@ function ElevationScroll({ children, window }: ElevationScrollProps) {
 }
 
 const nav = [
-    // { id: 'summary', name: 'Trang chủ', key: 0 },
-    // { id: 'hightlight', name: 'Tính năng', key: 1 },
-    // { id: 'introduction', name: 'Giới thiệu', key: 2 },
-    // { id: 'teller', name: 'Tại sao chọn emTeller?', key: 3 }
-    { id: 'summaryIntro', name: 'Giới thiệu', key: 0 },
-    { id: 'benefit', name: 'Lợi ích', key: 1 },
-    { id: 'feature', name: 'Tính năng nổi bật', key: 2 },
-    { id: 'procedure', name: 'Quy trình', key: 3 },
-    { id: 'price', name: 'Bảng giá', key: 4 },
-    { id: 'contact', name: 'Liên hệ', key: 5 }
+    // { id: 'summaryIntro', name: 'Giới thiệu', key: 0 },
+    { id: 'summaryIntro', name: <FormattedMessage id="hd_intro" />, key: 0 },
+    { id: 'benefit', name: <FormattedMessage id="hd_benefit" />, key: 1 },
+    { id: 'feature', name: <FormattedMessage id="hd_feature" />, key: 2 },
+    { id: 'procedure', name: <FormattedMessage id="hd_procedure" />, key: 3 },
+    { id: 'price', name: <FormattedMessage id="hd_price" />, key: 4 },
+    { id: 'contact', name: <FormattedMessage id="hd_contact" />, key: 5 }
 ];
 
 // ==============================|| MINIMAL LAYOUT APP BAR ||============================== //
@@ -100,7 +99,8 @@ const AppBar = ({ ...others }) => {
                             sx={{
                                 display: {
                                     xs: 'none',
-                                    sm: 'block'
+                                    sm: 'block',
+                                    padding: '10px 0'
                                 }
                             }}
                         >
@@ -110,13 +110,14 @@ const AppBar = ({ ...others }) => {
                             sx={{
                                 display: {
                                     xs: 'block',
-                                    sm: 'none'
+                                    sm: 'none',
+                                    padding: '10px 0'
                                 }
                             }}
                         >
-                            <LogoText2 />
+                            <Logo />
                         </Typography>
-                        <Stack direction="row" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} spacing={2}>
+                        <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }} spacing={2}>
                             {nav.map((item, index) => (
                                 <Button key={item.key} color="inherit" onClick={() => handleScrollToSection(item.id, item.key)}>
                                     <Typography fontWeight={500} sx={{ color: index === isActive ? '#00A64F' : 'none' }}>
@@ -124,13 +125,9 @@ const AppBar = ({ ...others }) => {
                                     </Typography>
                                 </Button>
                             ))}
-                            <Button sx={{ display: 'none' }} color="inherit" onClick={() => handleScrollToSection('teller')}>
-                                <Typography fontWeight={500}>Tại sao chọn emTeller?</Typography>
-                            </Button>
                         </Stack>
-                        <Stack direction="row" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+                        <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }}>
                             <Button
-                                // onClick={() => handleScrollToSection('contact')}
                                 sx={{
                                     marginRight: '10px',
                                     marginY: '22px',
@@ -141,10 +138,9 @@ const AppBar = ({ ...others }) => {
                                     border: '1px solid #00A64F'
                                 }}
                             >
-                                Vi <KeyboardArrowDownIcon />
+                                <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
                             </Button>
                             <Button
-                                // onClick={() => handleScrollToSection('contact')}
                                 sx={{
                                     marginY: '22px',
                                     padding: '13px 24px',
@@ -154,7 +150,7 @@ const AppBar = ({ ...others }) => {
                                     border: '1px solid #00A64F'
                                 }}
                             >
-                                Đăng ký
+                                <FormattedMessage id="btn_register" />
                             </Button>
                             <Button
                                 sx={{
@@ -166,12 +162,21 @@ const AppBar = ({ ...others }) => {
                                     ':hover': { background: '#00A64F', color: 'white' }
                                 }}
                             >
-                                Đăng nhập
+                                <FormattedMessage id="btn_login" />
                             </Button>
                         </Stack>
-                        <Stack sx={{ display: { sm: 'block', md: 'none' } }} direction="row">
+                        <Stack
+                            sx={{
+                                display: {
+                                    xs: 'block',
+                                    lg: 'none',
+                                    padding: '20px'
+                                }
+                            }}
+                            direction="row"
+                        >
                             <IconButton color="inherit" onClick={drawerToggler(true)} size="small">
-                                <img src={menu} alt="menu" />
+                                <img src={menuTXL} alt="menuTXL" />
                             </IconButton>
                             <Drawer anchor="top" open={drawerToggle} onClose={drawerToggler(false)}>
                                 {drawerToggle && (
@@ -187,7 +192,9 @@ const AppBar = ({ ...others }) => {
                                                     <ListItemIcon>
                                                         <IconHome2 />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Giới thiệu" />
+                                                    <ListItemText>
+                                                        <FormattedMessage id="hd_intro" />
+                                                    </ListItemText>
                                                 </ListItemButton>
                                             </Link>
                                             <Link style={{ textDecoration: 'none' }} onClick={() => handleScrollToSection('benefit')}>
@@ -195,7 +202,9 @@ const AppBar = ({ ...others }) => {
                                                     <ListItemIcon>
                                                         <IconDashboard />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Lợi ích" />
+                                                    <ListItemText>
+                                                        <FormattedMessage id="hd_benefit" />
+                                                    </ListItemText>
                                                 </ListItemButton>
                                             </Link>
                                             <Link style={{ textDecoration: 'none' }} onClick={() => handleScrollToSection('feature')}>
@@ -203,7 +212,9 @@ const AppBar = ({ ...others }) => {
                                                     <ListItemIcon>
                                                         <IconBook />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Tính năng nổi bật" />
+                                                    <ListItemText>
+                                                        <FormattedMessage id="hd_feature" />
+                                                    </ListItemText>
                                                 </ListItemButton>
                                             </Link>
                                             <Link style={{ textDecoration: 'none' }} onClick={() => handleScrollToSection('procedure')}>
@@ -211,23 +222,29 @@ const AppBar = ({ ...others }) => {
                                                     <ListItemIcon>
                                                         <IconCreditCard />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Quy trình" />
+                                                    <ListItemText>
+                                                        <FormattedMessage id="hd_procedure" />
+                                                    </ListItemText>
                                                 </ListItemButton>
                                             </Link>
                                             <Link style={{ textDecoration: 'none' }} onClick={() => handleScrollToSection('price')}>
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconCreditCard />
+                                                        <AttachMoneyIcon />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Bảng giá" />
+                                                    <ListItemText>
+                                                        <FormattedMessage id="hd_price" />
+                                                    </ListItemText>
                                                 </ListItemButton>
                                             </Link>
                                             <Link style={{ textDecoration: 'none' }} onClick={() => handleScrollToSection('contact')}>
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconCreditCard />
+                                                        <CallIcon />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Liên hệ " />
+                                                    <ListItemText>
+                                                        <FormattedMessage id="hd_contact" />
+                                                    </ListItemText>
                                                 </ListItemButton>
                                             </Link>
                                         </List>

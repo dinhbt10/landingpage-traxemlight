@@ -5,17 +5,16 @@ import scanQR from 'assets/procedure/ScanQR.svg';
 import viewQR from 'assets/procedure/ViewInforQR.svg';
 import img from 'assets/procedure/ImgProcedure.svg';
 import './Procedure.css';
+import { FormattedMessage } from 'react-intl';
 const Procedure = () => {
     return (
         <>
-            <section
-                id="procedure"
-                // style={{ background: 'linear-gradient(180deg, #FFDFBF 0%, #FFFCF8 100%)' }}
-                className="home__summary"
-            >
+            <section id="procedure" className="home__summary">
                 <Container>
                     <Grid mt="80px">
-                        <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>Quy trình hoạt động</h1>
+                        <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>
+                            <FormattedMessage id="pr_h1" />
+                        </h1>
                         <Grid container item xs={12} sm={12} md={12}>
                             <Grid item xs={12} sm={12} md={6}>
                                 <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="5%" px="10%">
@@ -48,14 +47,12 @@ const Procedure = () => {
                                             />
                                             <Box>
                                                 <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
-                                                    Tạo mẫu sản phẩm mới
+                                                    <FormattedMessage id="pr_create" />
                                                 </Typography>
                                             </Box>
                                         </Box>
                                         <Typography fontWeight="400" fontSize="16px">
-                                            Doanh nghiệp lựa chọn các thông tin muốn công khai và thiết kế giao diện cho trang thông tin sản
-                                            phẩm. Ví dụ như: hình ảnh sản phẩm, thành phần nguyên liệu, quy trình sản xuất, hướng dẫn sử
-                                            dụng, chứng chỉ và giải thưởng.
+                                            <FormattedMessage id="pr_ct_create" />
                                         </Typography>
                                     </Typography>
                                     <br />
@@ -83,14 +80,12 @@ const Procedure = () => {
                                             />
                                             <Box>
                                                 <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
-                                                    Nhập thông tin lô sản phẩm
+                                                    <FormattedMessage id="pt_enter_info" />
                                                 </Typography>
                                             </Box>
                                         </Box>
                                         <Typography fontWeight="400" fontSize="16px">
-                                            Doanh nghiệp lựa chọn mẫu sản phẩm và nhập thông tin cho lô sản xuất như mã lô và ngày sản xuất
-                                            và điều kiện môi trường tại thời điểm sản xuất. Ngoài ra, doanh nghiệp có thể tùy chỉnh thêm
-                                            thông tin muốn chia sẻ với người tiêu dùng.
+                                            <FormattedMessage id="pt_ct_info" />
                                         </Typography>
                                     </Typography>
                                     <br />
@@ -118,12 +113,12 @@ const Procedure = () => {
                                             />
                                             <Box>
                                                 <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
-                                                    In và dán mã QR
+                                                    <FormattedMessage id="pt_print" />
                                                 </Typography>
                                             </Box>
                                         </Box>
                                         <Typography fontWeight="400" fontSize="16px">
-                                            In mã QR đã được tạo từ thông tin lô sản xuất và dán lên sản phẩm
+                                            <FormattedMessage id="pt_ct_print" />
                                         </Typography>
                                     </Typography>
                                     <br />
@@ -151,13 +146,12 @@ const Procedure = () => {
                                             />
                                             <Box>
                                                 <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
-                                                    Quét mã QR và xem thông tin
+                                                    <FormattedMessage id="pt_scan" />
                                                 </Typography>
                                             </Box>
                                         </Box>
                                         <Typography fontWeight="400" fontSize="16px">
-                                            Người tiêu dùng sử dụng điện thoại hoặc máy tính bảng có camera để quét mã QR và xem thông tin
-                                            sản phẩm đã được doanh nghiệp công khai.
+                                            <FormattedMessage id="pt_ct_scan" />
                                         </Typography>
                                     </Typography>
                                     <br />

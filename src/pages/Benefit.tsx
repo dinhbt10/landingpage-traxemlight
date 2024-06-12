@@ -1,7 +1,7 @@
-import { Button, Container, Grid, Stack, Typography, Box } from '@mui/material';
+import { Container, Grid, Stack, Typography, Box } from '@mui/material';
 import backgroundBenefit from 'assets/BackgroundBenefit.svg';
-import introIMG from 'assets/images/landing/Home/IntroIMG.svg';
 import checkboxTXL from 'assets/CheckboxTXL.svg';
+import { FormattedMessage } from 'react-intl';
 const Benefit = () => {
     return (
         <>
@@ -17,16 +17,7 @@ const Benefit = () => {
                 }}
             >
                 <Container>
-                    <Grid
-                        mt="80px"
-                        container
-                        sx={{
-                            flexDirection: {
-                                xs: 'column-reverse',
-                                md: 'row'
-                            }
-                        }}
-                    >
+                    <Grid mt="80px" container>
                         <Grid item xs={12} sm={12} md={6}>
                             <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="10%">
                                 <Typography
@@ -43,7 +34,7 @@ const Benefit = () => {
                                         }
                                     }}
                                 >
-                                    Lợi ích sử dụng
+                                    <FormattedMessage id="bnf_h1" />
                                 </Typography>
                                 <br />
                                 <Typography
@@ -70,10 +61,10 @@ const Benefit = () => {
                                         />
                                         <Box>
                                             <Typography fontWeight="600" fontSize="22px" lineHeight="26.82px">
-                                                Triển khai nhanh
+                                                <FormattedMessage id="bnf_ct1" />
                                             </Typography>
                                             <Typography fontWeight="400" fontSize="18px">
-                                                Thiết lập nhanh chóng, không cần kỹ thuật phức tạp.
+                                                <FormattedMessage id="bnf_ct2" />
                                             </Typography>
                                         </Box>
                                     </Box>
@@ -104,10 +95,10 @@ const Benefit = () => {
                                         />
                                         <Box>
                                             <Typography fontWeight="600" fontSize="22px" lineHeight="26.82px">
-                                                Minh bạch thông tin
+                                                <FormattedMessage id="bnf_ct3" />
                                             </Typography>
                                             <Typography fontWeight="400" fontSize="18px">
-                                                Thông qua QR code, thông tin sản phẩm dễ dàng được chia sẻ với người tiêu dùng.{' '}
+                                                <FormattedMessage id="bnf_ct4" />{' '}
                                             </Typography>
                                         </Box>
                                     </Box>
@@ -138,11 +129,10 @@ const Benefit = () => {
                                         />
                                         <Box>
                                             <Typography fontWeight="600" fontSize="22px" lineHeight="26.82px">
-                                                Tăng độ tin cậy
+                                                <FormattedMessage id="bnf_ct5" />{' '}
                                             </Typography>
                                             <Typography fontWeight="400" fontSize="18px">
-                                                Giúp tăng cường mức độ tin cậy của sản phẩm thông qua việc chứng minh nguồn gốc xuất xứ, quy
-                                                trình sản xuất và các thông tin hữu ích khác.{' '}
+                                                <FormattedMessage id="bnf_ct6" />
                                             </Typography>
                                         </Box>
                                     </Box>
@@ -150,8 +140,29 @@ const Benefit = () => {
                                 <br />
                             </Stack>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={6}>
-                            <img src={introIMG} alt="bg" width="100%" height="100%" />
+                        <Grid
+                            item
+                            xs={12}
+                            sm={12}
+                            md={6}
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                padding: '30px'
+                            }}
+                        >
+                            <iframe
+                                width="611px"
+                                height="405px"
+                                src="https://www.youtube.com/embed/9q14JNH6CHU"
+                                title="YouTube video player"
+                                style={{
+                                    borderRadius: '30px'
+                                }}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
                         </Grid>
                     </Grid>
                 </Container>
