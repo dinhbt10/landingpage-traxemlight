@@ -58,7 +58,9 @@ function ElevationScroll({ children, window }: ElevationScrollProps) {
 
 const nav = [
     // { id: 'summaryIntro', name: 'Giới thiệu', key: 0 },
-    { id: 'summaryIntro', name: <FormattedMessage id="hd_intro" />, key: 0 },
+    // { id: 'summaryIntro', name: <FormattedMessage id="hd_intro" />, key: 0 },
+    { id: 'summaryIntro', name: 'Giới thiệu', key: 0 },
+
     { id: 'benefit', name: <FormattedMessage id="hd_benefit" />, key: 1 },
     { id: 'feature', name: <FormattedMessage id="hd_feature" />, key: 2 },
     { id: 'procedure', name: <FormattedMessage id="hd_procedure" />, key: 3 },
@@ -120,7 +122,10 @@ const AppBar = ({ ...others }) => {
                         <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }} spacing={2}>
                             {nav.map((item, index) => (
                                 <Button key={item.key} color="inherit" onClick={() => handleScrollToSection(item.id, item.key)}>
-                                    <Typography fontWeight={500} sx={{ color: index === isActive ? '#00A64F' : 'none' }}>
+                                    <Typography
+                                        fontWeight={500}
+                                        sx={{ color: index === isActive ? '#00A64F' : 'none', textTransform: 'none' }}
+                                    >
                                         {item.name}
                                     </Typography>
                                 </Button>
@@ -135,7 +140,8 @@ const AppBar = ({ ...others }) => {
                                     background: 'white',
                                     color: '#00A64F',
                                     borderRadius: '10px',
-                                    border: '1px solid #00A64F'
+                                    border: '1px solid #00A64F',
+                                    textTransform: 'none'
                                 }}
                             >
                                 <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
@@ -147,7 +153,8 @@ const AppBar = ({ ...others }) => {
                                     background: 'white',
                                     color: '#00A64F',
                                     borderRadius: '10px',
-                                    border: '1px solid #00A64F'
+                                    border: '1px solid #00A64F',
+                                    textTransform: 'none'
                                 }}
                             >
                                 <FormattedMessage id="btn_register" />
@@ -159,7 +166,8 @@ const AppBar = ({ ...others }) => {
                                     padding: '5px 14px',
                                     background: '#00A64F',
                                     marginLeft: '10px',
-                                    ':hover': { background: '#00A64F', color: 'white' }
+                                    ':hover': { background: '#00A64F', color: 'white' },
+                                    textTransform: 'none'
                                 }}
                             >
                                 <FormattedMessage id="btn_login" />

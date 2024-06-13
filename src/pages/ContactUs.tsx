@@ -60,7 +60,7 @@ const ContactUs = () => {
                     sx={{
                         background: 'linear-gradient(180deg, #E6F7EE 100%, #E6F7EE 100%)',
                         flexDirection: {
-                            xs: 'column-reverse',
+                            // xs: 'column-reverse',
                             sm: 'row'
                         }
                     }}
@@ -308,6 +308,7 @@ const ContactUs = () => {
                             style={{ backgroundColor: 'white', padding: '40px', borderRadius: '20px', boxShadow: '2px 2px 2px 2px #AAA' }}
                         >
                             <form style={{ width: '100%', marginTop: '30px' }} onSubmit={handleSubmit(onSubmit)}>
+                                <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}> Họ và tên</span>
                                 <Controller
                                     name="name"
                                     control={control}
@@ -324,8 +325,12 @@ const ContactUs = () => {
                                         />
                                     )}
                                 />
-                                <Grid container direction="row" spacing={2}>
+                                <Grid container direction="row" spacing={2} style={{ marginTop: '10px' }}>
                                     <Grid item xs={12} sm={6}>
+                                        <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}>
+                                            {' '}
+                                            Số điện thoại
+                                        </span>
                                         <Controller
                                             name="phoneNum"
                                             control={control}
@@ -344,6 +349,10 @@ const ContactUs = () => {
                                         />
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
+                                        <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}>
+                                            {' '}
+                                            Email
+                                        </span>
                                         <Controller
                                             name="email"
                                             control={control}
@@ -362,23 +371,29 @@ const ContactUs = () => {
                                         />
                                     </Grid>
                                 </Grid>
-                                <Controller
-                                    name="message"
-                                    control={control}
-                                    render={({ field: { onChange, value } }) => (
-                                        <TextField
-                                            type="textarea"
-                                            multiline
-                                            rows={4}
-                                            label={<FormattedMessage id="lb_messenger" />}
-                                            value={value}
-                                            onChange={onChange}
-                                            fullWidth
-                                            margin="normal"
-                                            error={!!errors.message?.message}
-                                        />
-                                    )}
-                                />
+                                <Grid item xs={12} sm={12} style={{ marginTop: '20px' }}>
+                                    <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}>
+                                        {' '}
+                                        Tin nhắn
+                                    </span>
+                                    <Controller
+                                        name="message"
+                                        control={control}
+                                        render={({ field: { onChange, value } }) => (
+                                            <TextField
+                                                type="textarea"
+                                                multiline
+                                                rows={4}
+                                                label={<FormattedMessage id="lb_messenger" />}
+                                                value={value}
+                                                onChange={onChange}
+                                                fullWidth
+                                                margin="normal"
+                                                error={!!errors.message?.message}
+                                            />
+                                        )}
+                                    />
+                                </Grid>
                                 <Grid container direction="row" justifyContent="space-between">
                                     <Grid item xs={12} sm={12}>
                                         <Controller

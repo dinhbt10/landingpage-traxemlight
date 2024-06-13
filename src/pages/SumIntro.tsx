@@ -33,7 +33,7 @@ const SumIntro = () => {
                                         fontSize: {
                                             xs: '32px',
                                             sm: '35px',
-                                            lg: '56px'
+                                            lg: '44px'
                                         }
                                     }}
                                 >
@@ -52,14 +52,15 @@ const SumIntro = () => {
                                             xs: '16px',
                                             sm: '16px',
                                             lg: '18px'
-                                        }
+                                        },
+                                        alignItems: 'Justified'
                                     }}
                                 >
                                     <FormattedMessage id="intro_ct1" />
-                                    <strong style={{ color: '#00A64F' }}>
+                                    <span style={{ color: '#00A64F' }}>
                                         {' '}
                                         <FormattedMessage id="intro_ct2" />
-                                    </strong>
+                                    </span>
                                     .
                                     <FormattedMessage id="intro_ct3" />
                                 </Typography>
@@ -80,9 +81,9 @@ const SumIntro = () => {
                                     }}
                                 >
                                     <FormattedMessage id="intro_ct4" />
-                                    <strong style={{ color: '#00A64F' }}>
+                                    <span style={{ color: '#00A64F' }}>
                                         <FormattedMessage id="intro_ct5" />
-                                    </strong>
+                                    </span>
                                     <FormattedMessage id="intro_ct6" />
                                 </Typography>{' '}
                                 <br />
@@ -94,7 +95,9 @@ const SumIntro = () => {
                                             padding: '10px 15px',
                                             background: '#00A64F',
                                             fontWeight: '700',
-                                            ':hover': { background: '#00A64F', color: 'white' }
+                                            ':hover': { background: '#00A64F', color: 'white' },
+                                            textTransform: 'none',
+                                            fontFamily: 'inter'
                                         }}
                                     >
                                         <FormattedMessage id="btn_try" />

@@ -26,13 +26,26 @@ const Ecosystem = () => {
                                 <Grid spacing={5} container item xs={12} sm={12} md={12}>
                                     <Grid item xs={12} sm={12} md={6}>
                                         <Box flex="1" minWidth="300px" bgcolor="transparent">
-                                            <img src={imgEco1} alt="bg" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
+                                            <img
+                                                src={imgEco1}
+                                                alt="bg"
+                                                style={{ width: '100%', height: 'auto', marginBottom: '10px', borderRadius: '20px' }}
+                                            />
                                             <Box display="flex" gap="10px">
                                                 <img src={traXemAgri} alt="bg" style={{ width: '20%', height: 'auto' }} />
                                                 <img src={traXemEmarket} alt="bg" style={{ width: '48%', height: 'auto' }} />
                                             </Box>
                                             <Box mt={2}>
-                                                <p style={{ fontWeight: '500', fontSize: '18px', fontFamily: 'inter', lineHeight: '22px' }}>
+                                                <p
+                                                    style={{
+                                                        fontWeight: '500',
+                                                        fontSize: '18px',
+                                                        fontFamily: 'inter',
+                                                        lineHeight: '22px',
+                                                        textAlign: 'justify',
+                                                        color: 'black'
+                                                    }}
+                                                >
                                                     <FormattedMessage id="eco_ct1" />
                                                 </p>
                                             </Box>
@@ -40,12 +53,25 @@ const Ecosystem = () => {
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={6}>
                                         <Box flex="1" minWidth="300px" bgcolor="transparent">
-                                            <img src={imgEco2} alt="bg" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
+                                            <img
+                                                src={imgEco2}
+                                                alt="bg"
+                                                style={{ width: '100%', height: 'auto', marginBottom: '10px', borderRadius: '20px' }}
+                                            />
                                             <Box display="flex" justifyContent="space-between" gap="10px">
                                                 <img src={traXemSCM} alt="bg" style={{ width: '33%', height: 'auto' }} />
                                             </Box>
                                             <Box mt={2}>
-                                                <p style={{ fontWeight: '500', fontSize: '18px', fontFamily: 'inter', lineHeight: '22px' }}>
+                                                <p
+                                                    style={{
+                                                        fontWeight: '500',
+                                                        fontSize: '18px',
+                                                        fontFamily: 'inter',
+                                                        lineHeight: '22px',
+                                                        textAlign: 'justify',
+                                                        color: 'black'
+                                                    }}
+                                                >
                                                     <FormattedMessage id="eco_ct2" />
                                                 </p>
                                             </Box>

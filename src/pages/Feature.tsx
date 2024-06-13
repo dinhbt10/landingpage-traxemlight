@@ -4,13 +4,6 @@ import iconQR from 'assets/feature/IconQR.svg';
 import iconART from 'assets/feature/IconArt.svg';
 import iconTemplate from 'assets/feature/IconTemplate.svg';
 
-//assets
-import Logo1 from '../assets/images/landing/Home/MediaLogo.svg';
-import Logo2 from 'assets/images/landing/Home/Logo2.svg';
-import Logo3 from 'assets/images/landing/Home/Logo3.svg';
-import Logo4 from 'assets/images/landing/Home/Logo4.svg';
-import Logo5 from 'assets/images/landing/Home/Logo5.svg';
-import Logo6 from 'assets/images/landing/Home/Logo6.svg';
 import { FormattedMessage } from 'react-intl';
 
 const Feature = () => {
