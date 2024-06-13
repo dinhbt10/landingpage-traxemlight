@@ -49,7 +49,7 @@ function Price() {
                             <Grid container item xs={12} sm={12} md={12} spacing={2}>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="10%"
@@ -158,7 +158,7 @@ function Price() {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -267,7 +267,7 @@ function Price() {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -377,7 +377,7 @@ function Price() {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"

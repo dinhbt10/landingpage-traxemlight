@@ -26,7 +26,7 @@ const Feature = () => {
                         <Grid container item xs={12} sm={12} md={12}>
                             <Grid item xs={12} sm={12} md={4}>
                                 <Typography
-                                    fontFamily="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="black"
                                     width="100%"
@@ -62,7 +62,7 @@ const Feature = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={4}>
                                 <Typography
-                                    fontFamily="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="black"
                                     width="100%"
@@ -98,7 +98,7 @@ const Feature = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={4}>
                                 <Typography
-                                    fontFamily="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="black"
                                     width="100%"

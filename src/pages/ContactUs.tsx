@@ -55,7 +55,7 @@ const ContactUs = () => {
     };
     return (
         <>
-            <section id="contact" style={{ padding: '0', margin: '0 30px' }}>
+            <section id="contact" style={{ padding: '0', margin: '0' }}>
                 <Stack
                     sx={{
                         background: 'linear-gradient(180deg, #E6F7EE 100%, #E6F7EE 100%)',
@@ -82,7 +82,7 @@ const ContactUs = () => {
                         <Stack width="100%" alignItems={'center'}>
                             <Typography
                                 fontWeight="600"
-                                font-family="Montserrat"
+                                fontStyle="Montserrat"
                                 color="#414042"
                                 width="100%"
                                 px="10%"
@@ -99,7 +99,7 @@ const ContactUs = () => {
                             </Typography>
                             <br />
                             <Typography
-                                font-family="Inter"
+                                fontFamily="Inter"
                                 fontWeight="400"
                                 color="#414042"
                                 width="100%"
@@ -117,7 +117,7 @@ const ContactUs = () => {
                             </Typography>
                             <br />
                             <Typography
-                                font-family="Montserrat"
+                                fontStyle="Montserrat"
                                 fontWeight="600"
                                 color="#414042"
                                 width="100%"
@@ -135,7 +135,7 @@ const ContactUs = () => {
                             </Typography>
                             <br />
                             <Typography
-                                font-family="Montserrat"
+                                fontStyle="Montserrat"
                                 fontWeight="600"
                                 color="#414042"
                                 width="100%"
@@ -149,20 +149,50 @@ const ContactUs = () => {
                                     }
                                 }}
                             >
-                                <img src={traXemAgri} alt="bg" width="53px" height="32px" style={{ margin: '5px' }} />
-                                <img src={traXemMarket} alt="bg" width="143px" height="32px" style={{ margin: '5px' }} />
-                                <img src={traXemSCM} alt="bg" width="92px" height="32px" style={{ margin: '5px' }} />
-                                <img src={smeAccel} alt="bg" width="97px" height="32px" style={{ margin: '5px' }} />
-                                <img src={emPL} alt="bg" width="84px" height="32px" style={{ margin: '5px' }} />
-                                <img src={emTeller} alt="bg" width="143px" height="32px" style={{ margin: '5px' }} />
-                                <img src={aceCRM} alt="bg" width="102px" height="32px" style={{ margin: '5px' }} />
-                                <img src={instanceView} alt="bg" width="96px" height="32px" style={{ margin: '5px' }} />
-                                <img src={eMedia} alt="bg" width="116px" height="32px" style={{ margin: '5px' }} />
+                                <img
+                                    src={traXemAgri}
+                                    alt="bg"
+                                    width="53px"
+                                    height="32px"
+                                    style={{ marginRight: '20px', marginTop: '5px' }}
+                                />
+                                <img
+                                    src={traXemMarket}
+                                    alt="bg"
+                                    width="143px"
+                                    height="32px"
+                                    style={{ marginRight: '20px', marginTop: '5px' }}
+                                />
+                                <img
+                                    src={traXemSCM}
+                                    alt="bg"
+                                    width="92px"
+                                    height="32px"
+                                    style={{ marginRight: '20px', marginTop: '5px' }}
+                                />
+                                <img src={smeAccel} alt="bg" width="97px" height="32px" style={{ marginRight: '20px', marginTop: '5px' }} />
+                                <img src={emPL} alt="bg" width="84px" height="32px" style={{ marginRight: '20px', marginTop: '5px' }} />
+                                <img
+                                    src={emTeller}
+                                    alt="bg"
+                                    width="143px"
+                                    height="32px"
+                                    style={{ marginRight: '20px', marginTop: '5px' }}
+                                />
+                                <img src={aceCRM} alt="bg" width="102px" height="32px" style={{ marginRight: '20px', marginTop: '5px' }} />
+                                <img
+                                    src={instanceView}
+                                    alt="bg"
+                                    width="96px"
+                                    height="32px"
+                                    style={{ marginRight: '20px', marginTop: '5px' }}
+                                />
+                                <img src={eMedia} alt="bg" width="116px" height="32px" style={{ marginRight: '20px', marginTop: '5px' }} />
                             </Typography>
                             <br />
 
                             <Typography
-                                font-family="Montserrat"
+                                fontStyle="Montserrat"
                                 fontWeight="500"
                                 color="#414042"
                                 width="100%"

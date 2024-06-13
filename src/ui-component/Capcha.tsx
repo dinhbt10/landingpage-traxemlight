@@ -4,7 +4,7 @@ import { styled } from '@mui/system';
 import { APP_CODE, CAPT_KEY, AUTH_GATE_API } from '../constants/index';
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
 
-const random = () => crypto?.randomUUID();
+const random = () => crypto.randomUUID();
 
 const RefreshButton = styled('button')({
     background: 'unset',
@@ -14,9 +14,9 @@ const RefreshButton = styled('button')({
 });
 
 export default forwardRef<{ refresh?: () => void }>(function Captcha(_, ref) {
-    const [r, setR] = useState(random());
+    const [r, setR] = useState(Date.now());
     function refresh() {
-        setR(random());
+        setR(Date.now());
     }
     useEffect(() => {
         const timer = setTimeout(refresh, 2 * 60 * 1000);

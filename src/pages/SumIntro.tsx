@@ -25,7 +25,7 @@ const SumIntro = () => {
                             <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="10%">
                                 <Typography
                                     fontWeight="600"
-                                    font-family="Montserrat"
+                                    fontStyle="Montserrat"
                                     color="#00A64F"
                                     width="100%"
                                     px="10%"
@@ -41,7 +41,7 @@ const SumIntro = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    font-family="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="#393939"
                                     width="100%"
@@ -65,7 +65,7 @@ const SumIntro = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    font-family="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="#393939"
                                     width="100%"
@@ -86,7 +86,7 @@ const SumIntro = () => {
                                     <FormattedMessage id="intro_ct6" />
                                 </Typography>{' '}
                                 <br />
-                                <Typography font-family="Montserrat" fontWeight="500" color="#393939" width="100%" px="10%" align="justify">
+                                <Typography fontStyle="Montserrat" fontWeight="500" color="#393939" width="100%" px="10%" align="justify">
                                     <Button
                                         sx={{
                                             borderRadius: '41px',

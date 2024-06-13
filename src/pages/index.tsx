@@ -12,7 +12,7 @@ import ContactUs from './ContactUs';
 const Landing = () => (
     <>
         <SumIntro />
-        <Box sx={{ maxWidth: '1440px', margin: 'auto' }}>
+        <Box>
             <Benefit />
             <Feature />
             <Procedure />

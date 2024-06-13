@@ -22,7 +22,7 @@ const Benefit = () => {
                             <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="10%">
                                 <Typography
                                     fontWeight="600"
-                                    font-family="Montserrat"
+                                    fontStyle="Montserrat"
                                     color="white"
                                     width="100%"
                                     px="10%"
@@ -38,7 +38,7 @@ const Benefit = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    fontFamily="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"
@@ -71,7 +71,7 @@ const Benefit = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    font-family="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"
@@ -105,7 +105,7 @@ const Benefit = () => {
                                 </Typography>{' '}
                                 <br />
                                 <Typography
-                                    font-family="Montserrat"
+                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"

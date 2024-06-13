@@ -24,7 +24,7 @@ const Procedure = () => {
                             <Grid item xs={12} sm={12} md={6}>
                                 <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="5%" px="5%">
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -57,7 +57,7 @@ const Procedure = () => {
                                     </Typography>
                                     <br />
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -90,7 +90,7 @@ const Procedure = () => {
                                     </Typography>
                                     <br />
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -123,7 +123,7 @@ const Procedure = () => {
                                     </Typography>
                                     <br />
                                     <Typography
-                                        fontFamily="Montserrat"
+                                        fontStyle="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
