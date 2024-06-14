@@ -13,10 +13,10 @@ const Ecosystem = () => {
                 <Stack style={{ padding: '20px' }}>
                     <Container>
                         <Grid mt="80px">
-                            <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>
+                            <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: '#414042' }}>
                                 <FormattedMessage id="eco_h1" />
                             </h1>
-                            <h2 style={{ textAlign: 'center', fontWeight: '600', fontSize: '18px', color: 'black' }}>
+                            <h2 style={{ textAlign: 'center', fontWeight: '600', fontSize: '18px', color: '#414042' }}>
                                 <FormattedMessage id="eco_h2" />
                             </h2>
 
@@ -43,7 +43,7 @@ const Ecosystem = () => {
                                                         fontFamily: 'inter',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',
-                                                        color: 'black'
+                                                        color: '#333333'
                                                     }}
                                                 >
                                                     <FormattedMessage id="eco_ct1" />
@@ -66,10 +66,10 @@ const Ecosystem = () => {
                                                     style={{
                                                         fontWeight: '500',
                                                         fontSize: '18px',
-                                                        fontFamily: 'inter',
+                                                        fontFamily: 'Inter',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',
-                                                        color: 'black'
+                                                        color: '#333333'
                                                     }}
                                                 >
                                                     <FormattedMessage id="eco_ct2" />
