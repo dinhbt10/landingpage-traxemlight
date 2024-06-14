@@ -59,7 +59,7 @@ const ContactUs = () => {
             <section id="contact" style={{ padding: '0', margin: '0' }}>
                 <Stack
                     sx={{
-                        background: 'linear-gradient(180deg, #E6F7EE 100%, #E6F7EE 100%)',
+                        background: 'linear-gradient(180deg, #E6F7EE 90%, #E6F7EE 100%)',
                         flexDirection: {
                             // xs: 'column-reverse',
                             sm: 'row'
@@ -82,9 +82,6 @@ const ContactUs = () => {
                                                 fontWeight="600"
                                                 fontStyle="Montserrat"
                                                 color="#414042"
-                                                // width="75%"
-
-                                                px="10%"
                                                 // px="10%"
                                                 sx={{
                                                     fontSize: {
@@ -93,10 +90,12 @@ const ContactUs = () => {
                                                         lg: '32px'
                                                     },
                                                     width: {
+                                                        xs: '100%',
                                                         sm: '100%',
-                                                        lg: '75%'
+                                                        lg: '100%'
                                                     },
-                                                    lineHeight: '39.01px'
+                                                    lineHeight: '39.01px',
+                                                    marginBottom: '10px'
                                                 }}
                                             >
                                                 <FormattedMessage id="contact_h1" />
@@ -105,7 +104,6 @@ const ContactUs = () => {
                                                 fontFamily="Inter"
                                                 fontWeight="400"
                                                 color="#414042"
-                                                px="10%"
                                                 width="100%"
                                                 align="justify"
                                                 sx={{
@@ -118,13 +116,28 @@ const ContactUs = () => {
                                             >
                                                 <FormattedMessage id="contact_ct1" />
                                             </Typography>
+                                            <Typography
+                                                fontFamily="Inter"
+                                                fontWeight="400"
+                                                color="#414042"
+                                                width="100%"
+                                                align="justify"
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: '16px',
+                                                        sm: '16px',
+                                                        lg: '18px'
+                                                    }
+                                                }}
+                                            >
+                                                <FormattedMessage id="contact_ct2" />
+                                            </Typography>
                                             <br />
                                             <Typography
                                                 fontStyle="Montserrat"
                                                 fontWeight="600"
                                                 color="#414042"
                                                 width="100%"
-                                                px="10%"
                                                 align="justify"
                                                 sx={{
                                                     fontSize: {
@@ -137,12 +150,11 @@ const ContactUs = () => {
                                                 <FormattedMessage id="contact_h2" />
                                             </Typography>
                                             <br />
-                                            <Typography
+                                            <Box
                                                 // fontStyle="Montserrat"
                                                 // fontWeight="600"
                                                 // color="#414042"
-                                                // width="100%"
-                                                px="10%"
+                                                width="100%"
                                                 // align="justify"
                                                 sx={{
                                                     fontSize: {
@@ -151,75 +163,33 @@ const ContactUs = () => {
                                                         lg: '18px'
                                                     },
                                                     width: {
-                                                        lg: '120%',
-                                                        sm: '120%'
+                                                        lg: '100%',
+                                                        sm: '100%'
+                                                    },
+                                                    height: {
+                                                        // lg: '84px'
+                                                        // xs: '200px'
+                                                    },
+
+                                                    display: 'flex',
+                                                    flexWrap: 'wrap',
+                                                    gap: 2,
+                                                    marginBottom: {
+                                                        lg: '15px',
+                                                        xs: '15px'
                                                     }
                                                 }}
                                             >
-                                                <img
-                                                    src={traXemAgri}
-                                                    alt="bg"
-                                                    width="53px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={traXemMarket}
-                                                    alt="bg"
-                                                    width="143px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={traXemSCM}
-                                                    alt="bg"
-                                                    width="92px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={smeAccel}
-                                                    alt="bg"
-                                                    width="97px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={emPL}
-                                                    alt="bg"
-                                                    width="84px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={emTeller}
-                                                    alt="bg"
-                                                    width="143px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={aceCRM}
-                                                    alt="bg"
-                                                    width="102px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={instanceView}
-                                                    alt="bg"
-                                                    width="96px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                                <img
-                                                    src={eMedia}
-                                                    alt="bg"
-                                                    width="116px"
-                                                    height="32px"
-                                                    style={{ marginRight: '20px', marginTop: '5px' }}
-                                                />
-                                            </Typography>
+                                                <img src={traXemAgri} alt="bg" width="53px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={traXemMarket} alt="bg" width="143px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={traXemSCM} alt="bg" width="92px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={smeAccel} alt="bg" width="97px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={emPL} alt="bg" width="84px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={emTeller} alt="bg" width="143px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={aceCRM} alt="bg" width="102px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={instanceView} alt="bg" width="96px" height="32px" style={{ marginTop: '5px' }} />
+                                                <img src={eMedia} alt="bg" width="116px" height="32px" style={{ marginTop: '5px' }} />
+                                            </Box>
                                             <br />
 
                                             <Typography
@@ -227,7 +197,6 @@ const ContactUs = () => {
                                                 fontWeight="500"
                                                 color="#414042"
                                                 width="100%"
-                                                px="10%"
                                                 align="justify"
                                                 sx={{
                                                     fontSize: {
@@ -259,14 +228,19 @@ const ContactUs = () => {
                                                 <Box sx={{ display: 'flex', marginBottom: '5px' }}>
                                                     <Typography
                                                         fontWeight="500"
-                                                        fontSize="16px"
+                                                        fontSize="14px"
                                                         lineHeight="24px"
-                                                        width="40%"
-                                                        style={{ textAlign: 'left' }}
+                                                        sx={{
+                                                            textAlign: 'left',
+                                                            width: {
+                                                                xs: '30%',
+                                                                lg: '25%'
+                                                            }
+                                                        }}
                                                     >
                                                         <FormattedMessage id="contact_mst" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="16px" lineHeight="24px">
+                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px">
                                                         <FormattedMessage id="contact_mst2" />
                                                     </Typography>
                                                 </Box>
@@ -274,14 +248,19 @@ const ContactUs = () => {
                                                 <Box sx={{ display: 'flex', marginBottom: '5px' }}>
                                                     <Typography
                                                         fontWeight="500"
-                                                        fontSize="16px"
+                                                        fontSize="14px"
                                                         lineHeight="24px"
-                                                        width="40%"
-                                                        style={{ textAlign: 'left' }}
+                                                        sx={{
+                                                            textAlign: 'left',
+                                                            width: {
+                                                                xs: '30%',
+                                                                lg: '25%'
+                                                            }
+                                                        }}
                                                     >
                                                         <FormattedMessage id="contact_address" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="16px" lineHeight="24px" flex="1">
+                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" flex="1">
                                                         <FormattedMessage id="contact_address2" />
                                                     </Typography>
                                                 </Box>
@@ -289,14 +268,19 @@ const ContactUs = () => {
                                                 <Box sx={{ display: 'flex', marginBottom: '5px' }}>
                                                     <Typography
                                                         fontWeight="500"
-                                                        fontSize="16px"
+                                                        fontSize="14px"
                                                         lineHeight="24px"
-                                                        width="40%"
-                                                        style={{ textAlign: 'left' }}
+                                                        sx={{
+                                                            textAlign: 'left',
+                                                            width: {
+                                                                xs: '30%',
+                                                                lg: '25%'
+                                                            }
+                                                        }}
                                                     >
                                                         <FormattedMessage id="contact_phone" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="16px" lineHeight="24px" flex="1">
+                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" flex="1">
                                                         <FormattedMessage id="contact_phone2" />
                                                     </Typography>
                                                 </Box>
@@ -304,14 +288,19 @@ const ContactUs = () => {
                                                 <Box sx={{ display: 'flex', marginBottom: '5px' }}>
                                                     <Typography
                                                         fontWeight="500"
-                                                        fontSize="16px"
+                                                        fontSize="14px"
                                                         lineHeight="24px"
-                                                        width="40%"
-                                                        style={{ textAlign: 'left' }}
+                                                        sx={{
+                                                            textAlign: 'left',
+                                                            width: {
+                                                                xs: '30%',
+                                                                lg: '25%'
+                                                            }
+                                                        }}
                                                     >
                                                         <FormattedMessage id="contact_email" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="16px" lineHeight="24px" flex="1">
+                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" flex="1">
                                                         <FormattedMessage id="contact_email2" />
                                                     </Typography>
                                                 </Box>
@@ -330,7 +319,7 @@ const ContactUs = () => {
                                             <form style={{ width: '100%', marginTop: '30px' }} onSubmit={handleSubmit(onSubmit)}>
                                                 <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}>
                                                     {' '}
-                                                    Họ và tên
+                                                    <FormattedMessage id="lb_fullname" />
                                                 </span>
                                                 <Controller
                                                     name="name"
@@ -359,7 +348,7 @@ const ContactUs = () => {
                                                             }}
                                                         >
                                                             {' '}
-                                                            Số điện thoại
+                                                            <FormattedMessage id="lb_phone" />
                                                         </span>
                                                         <Controller
                                                             name="phoneNum"
@@ -388,7 +377,7 @@ const ContactUs = () => {
                                                             }}
                                                         >
                                                             {' '}
-                                                            Email
+                                                            <FormattedMessage id="lb_email" />
                                                         </span>
                                                         <Controller
                                                             name="email"
@@ -413,7 +402,7 @@ const ContactUs = () => {
                                                         style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}
                                                     >
                                                         {' '}
-                                                        Tin nhắn
+                                                        <FormattedMessage id="messenger" />
                                                     </span>
                                                     <Controller
                                                         name="message"

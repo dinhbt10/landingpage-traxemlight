@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Stack } from '@mui/material';
+import { fontSize } from '@mui/system';
 import imgEco1 from 'assets/ecosystem/ImgEco1.svg';
 import imgEco2 from 'assets/ecosystem/ImgEco2.svg';
 import traXemAgri from 'assets/ecosystem/TraXemAgri.svg';
@@ -35,11 +36,19 @@ const Ecosystem = () => {
                                                 <img src={traXemAgri} alt="bg" style={{ width: '20%', height: 'auto' }} />
                                                 <img src={traXemEmarket} alt="bg" style={{ width: '48%', height: 'auto' }} />
                                             </Box>
-                                            <Box mt={2}>
+                                            <Box
+                                                mt={2}
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: '16px',
+                                                        lg: '18px'
+                                                    }
+                                                }}
+                                            >
                                                 <p
                                                     style={{
                                                         fontWeight: '500',
-                                                        fontSize: '18px',
+
                                                         fontFamily: 'inter',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',
@@ -61,11 +70,19 @@ const Ecosystem = () => {
                                             <Box display="flex" justifyContent="space-between" gap="10px">
                                                 <img src={traXemSCM} alt="bg" style={{ width: '33%', height: 'auto' }} />
                                             </Box>
-                                            <Box mt={2}>
+                                            <Box
+                                                mt={2}
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: '16px',
+                                                        lg: '18px'
+                                                    }
+                                                }}
+                                            >
                                                 <p
                                                     style={{
                                                         fontWeight: '500',
-                                                        fontSize: '18px',
+                                                        // fontSize: '18px',
                                                         fontFamily: 'Inter',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',

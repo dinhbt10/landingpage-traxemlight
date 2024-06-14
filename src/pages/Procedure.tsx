@@ -37,16 +37,19 @@ const Procedure = () => {
                                             }
                                         }}
                                     >
-                                        <Box display="flex" alignItems="center">
-                                            <img
-                                                src={create}
-                                                alt="bg"
-                                                width="32px"
-                                                height="32px"
-                                                style={{ marginRight: '8px', marginTop: '4px' }}
-                                            />
-                                            <Box>
-                                                <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                        <Box display="flex" alignItems="center" marginBottom={'10px'}>
+                                            <img src={create} alt="bg" width="32px" height="32px" style={{ marginRight: '8px' }} />
+                                            <Box sx={{ display: 'flex' }}>
+                                                <Typography
+                                                    fontWeight="600"
+                                                    lineHeight="29.26px"
+                                                    sx={{
+                                                        fontSize: {
+                                                            xs: '20px',
+                                                            lg: '24px'
+                                                        }
+                                                    }}
+                                                >
                                                     <FormattedMessage id="pr_create" />
                                                 </Typography>
                                             </Box>
@@ -70,16 +73,19 @@ const Procedure = () => {
                                             }
                                         }}
                                     >
-                                        <Box display="flex" alignItems="center">
-                                            <img
-                                                src={enterInfor}
-                                                alt="bg"
-                                                width="32px"
-                                                height="32px"
-                                                style={{ marginRight: '8px', marginTop: '4px' }}
-                                            />
+                                        <Box display="flex" alignItems="center" marginBottom={'10px'}>
+                                            <img src={enterInfor} alt="bg" width="32px" height="32px" style={{ marginRight: '8px' }} />
                                             <Box>
-                                                <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                                <Typography
+                                                    fontWeight="600"
+                                                    sx={{
+                                                        fontSize: {
+                                                            xs: '20px',
+                                                            lg: '24px'
+                                                        }
+                                                    }}
+                                                    lineHeight="29.26px"
+                                                >
                                                     <FormattedMessage id="pt_enter_info" />
                                                 </Typography>
                                             </Box>
@@ -103,16 +109,19 @@ const Procedure = () => {
                                             }
                                         }}
                                     >
-                                        <Box display="flex" alignItems="center">
-                                            <img
-                                                src={scanQR}
-                                                alt="bg"
-                                                width="32px"
-                                                height="32px"
-                                                style={{ marginRight: '8px', marginTop: '4px' }}
-                                            />
+                                        <Box display="flex" alignItems="center" marginBottom={'10px'}>
+                                            <img src={scanQR} alt="bg" width="32px" height="32px" style={{ marginRight: '8px' }} />
                                             <Box>
-                                                <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                                <Typography
+                                                    fontWeight="600"
+                                                    sx={{
+                                                        fontSize: {
+                                                            xs: '20px',
+                                                            lg: '24px'
+                                                        }
+                                                    }}
+                                                    lineHeight="29.26px"
+                                                >
                                                     <FormattedMessage id="pt_print" />
                                                 </Typography>
                                             </Box>
@@ -136,16 +145,19 @@ const Procedure = () => {
                                             }
                                         }}
                                     >
-                                        <Box display="flex" alignItems="center">
-                                            <img
-                                                src={viewQR}
-                                                alt="bg"
-                                                width="32px"
-                                                height="32px"
-                                                style={{ marginRight: '8px', marginTop: '4px' }}
-                                            />
+                                        <Box display="flex" alignItems="center" marginBottom={'10px'}>
+                                            <img src={viewQR} alt="bg" width="32px" height="32px" style={{ marginRight: '8px' }} />
                                             <Box>
-                                                <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                                <Typography
+                                                    fontWeight="600"
+                                                    sx={{
+                                                        fontSize: {
+                                                            xs: '20px',
+                                                            lg: '24px'
+                                                        }
+                                                    }}
+                                                    lineHeight="29.26px"
+                                                >
                                                     <FormattedMessage id="pt_scan" />
                                                 </Typography>
                                             </Box>

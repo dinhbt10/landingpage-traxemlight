@@ -10,8 +10,9 @@ const FooterPage = () => {
     return (
         <Box
             sx={{
-                width: '100vw',
+                // width: '100vw',
                 marginTop: '30px',
+                marginBottom: '30px',
                 display: 'flex',
                 flexDirection: {
                     lg: 'row',
@@ -25,7 +26,7 @@ const FooterPage = () => {
             px="30px"
             my="10px"
         >
-            <Typography>
+            <Typography sx={{ fontFamily: 'inter', fontWeight: '500', fontSize: '18px', textAlign: 'center' }}>
                 <FormattedMessage id="footer" />
             </Typography>
 

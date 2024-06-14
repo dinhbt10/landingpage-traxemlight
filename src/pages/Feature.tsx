@@ -28,7 +28,7 @@ const Feature = () => {
                                         fontSize: {
                                             xs: '16px',
                                             sm: '16px',
-                                            lg: '18px'
+                                            lg: '16px'
                                         }
                                     }}
                                 >
@@ -43,7 +43,16 @@ const Feature = () => {
                                     </Box>
                                     <br />
                                     <Box>
-                                        <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                        <Typography
+                                            fontWeight="600"
+                                            lineHeight="29.26px"
+                                            sx={{
+                                                fontSize: {
+                                                    xs: '22px',
+                                                    lg: '24px'
+                                                }
+                                            }}
+                                        >
                                             <FormattedMessage id="ft_g1_h1" />
                                         </Typography>
                                         <br />
@@ -64,7 +73,7 @@ const Feature = () => {
                                         fontSize: {
                                             xs: '16px',
                                             sm: '16px',
-                                            lg: '18px'
+                                            lg: '16px'
                                         }
                                     }}
                                 >
@@ -79,7 +88,16 @@ const Feature = () => {
                                     </Box>
                                     <br />
                                     <Box>
-                                        <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                        <Typography
+                                            fontWeight="600"
+                                            lineHeight="29.26px"
+                                            sx={{
+                                                fontSize: {
+                                                    xs: '22px',
+                                                    lg: '24px'
+                                                }
+                                            }}
+                                        >
                                             <FormattedMessage id="ft_g2_h1" />
                                         </Typography>
                                         <br />
@@ -100,7 +118,7 @@ const Feature = () => {
                                         fontSize: {
                                             xs: '16px',
                                             sm: '16px',
-                                            lg: '18px'
+                                            lg: '16px'
                                         }
                                     }}
                                 >
@@ -115,7 +133,16 @@ const Feature = () => {
                                     </Box>
                                     <br />
                                     <Box>
-                                        <Typography fontWeight="600" fontSize="24px" lineHeight="29.26px">
+                                        <Typography
+                                            fontWeight="600"
+                                            lineHeight="29.26px"
+                                            sx={{
+                                                fontSize: {
+                                                    xs: '22px',
+                                                    lg: '24px'
+                                                }
+                                            }}
+                                        >
                                             <FormattedMessage id="ft_g3_h1" />
                                         </Typography>
                                         <br />

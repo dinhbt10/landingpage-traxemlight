@@ -29,8 +29,8 @@ const Benefit = () => {
                                     sx={{
                                         fontSize: {
                                             xs: '32px',
-                                            sm: '35px',
-                                            lg: '56px'
+                                            sm: '32px',
+                                            lg: '32px'
                                         }
                                     }}
                                 >
@@ -60,10 +60,19 @@ const Benefit = () => {
                                             style={{ marginRight: '8px', marginTop: '4px' }}
                                         />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="22px" lineHeight="26.82px">
+                                            <Typography
+                                                fontWeight="600"
+                                                lineHeight="26.82px"
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: '20px',
+                                                        lg: '22px'
+                                                    }
+                                                }}
+                                            >
                                                 <FormattedMessage id="bnf_ct1" />
                                             </Typography>
-                                            <Typography fontWeight="400" fontSize="18px">
+                                            <Typography fontWeight="400" fontSize="16px">
                                                 <FormattedMessage id="bnf_ct2" />
                                             </Typography>
                                         </Box>
@@ -94,10 +103,19 @@ const Benefit = () => {
                                             style={{ marginRight: '8px', marginTop: '4px' }}
                                         />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="22px" lineHeight="26.82px">
+                                            <Typography
+                                                fontWeight="600"
+                                                lineHeight="26.82px"
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: '20px',
+                                                        lg: '22px'
+                                                    }
+                                                }}
+                                            >
                                                 <FormattedMessage id="bnf_ct3" />
                                             </Typography>
-                                            <Typography fontWeight="400" fontSize="18px">
+                                            <Typography fontWeight="400" fontSize="16px">
                                                 <FormattedMessage id="bnf_ct4" />{' '}
                                             </Typography>
                                         </Box>
@@ -128,10 +146,19 @@ const Benefit = () => {
                                             style={{ marginRight: '8px', marginTop: '4px' }}
                                         />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="22px" lineHeight="26.82px">
+                                            <Typography
+                                                fontWeight="600"
+                                                lineHeight="26.82px"
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: '20px',
+                                                        lg: '22px'
+                                                    }
+                                                }}
+                                            >
                                                 <FormattedMessage id="bnf_ct5" />{' '}
                                             </Typography>
-                                            <Typography fontWeight="400" fontSize="18px">
+                                            <Typography fontWeight="400" fontSize="16px">
                                                 <FormattedMessage id="bnf_ct6" />
                                             </Typography>
                                         </Box>

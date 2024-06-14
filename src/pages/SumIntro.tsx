@@ -50,7 +50,7 @@ const SumIntro = () => {
                                     sx={{
                                         fontSize: {
                                             xs: '16px',
-                                            sm: '16px',
+                                            sm: '18px',
                                             lg: '18px'
                                         },
                                         alignItems: 'Justified'
@@ -75,7 +75,7 @@ const SumIntro = () => {
                                     sx={{
                                         fontSize: {
                                             xs: '16px',
-                                            sm: '16px',
+                                            sm: '18px',
                                             lg: '18px'
                                         }
                                     }}
