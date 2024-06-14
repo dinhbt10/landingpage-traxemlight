@@ -11,7 +11,7 @@ const FooterPage = () => {
         <Box
             sx={{
                 width: '100vw',
-                margin: 'auto',
+                marginTop: '30px',
                 display: 'flex',
                 flexDirection: {
                     lg: 'row',
@@ -30,17 +30,18 @@ const FooterPage = () => {
             </Typography>
 
             <Stack direction="row">
+                <Button onClick={() => window.open('https://insight.vsi-international.com/', '_blank')}>
+                    <img src={VSII} alt="logo" />
+                </Button>
                 <Button onClick={() => window.open('https://www.youtube.com/channel/UCbzgyuU8XqBu2g-Y0TvPiag', '_blank')}>
                     <img src={Youtube} alt="logo" />
                 </Button>
-                <Button onClick={() => window.open('https://www.linkedin.com/company/vietsoftware-international', '_blank')}>
-                    <img src={Linkedln} alt="logo" />
-                </Button>
+
                 <Button onClick={() => window.open('https://www.facebook.com/VSII.Fanpage', '_blank')}>
                     <img src={Facebook} alt="logo" />
                 </Button>
-                <Button onClick={() => window.open('https://insight.vsi-international.com/', '_blank')}>
-                    <img src={VSII} alt="logo" />
+                <Button onClick={() => window.open('https://www.linkedin.com/company/vietsoftware-international', '_blank')}>
+                    <img src={Linkedln} alt="logo" />
                 </Button>
             </Stack>
         </Box>

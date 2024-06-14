@@ -51,7 +51,7 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px">
+                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="pr_ct_create" />
                                         </Typography>
                                     </Typography>
@@ -84,7 +84,7 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px">
+                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="pt_ct_info" />
                                         </Typography>
                                     </Typography>
@@ -117,7 +117,7 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px">
+                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="pt_ct_print" />
                                         </Typography>
                                     </Typography>
@@ -150,7 +150,7 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px">
+                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="pt_ct_scan" />
                                         </Typography>
                                     </Typography>

@@ -47,7 +47,7 @@ const Feature = () => {
                                             <FormattedMessage id="ft_g1_h1" />
                                         </Typography>
                                         <br />
-                                        <Typography fontWeight="400" fontSize="18px">
+                                        <Typography fontWeight="400" fontSize="18px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="ft_g1_c1" />
                                         </Typography>
                                     </Box>
@@ -83,7 +83,7 @@ const Feature = () => {
                                             <FormattedMessage id="ft_g2_h1" />
                                         </Typography>
                                         <br />
-                                        <Typography fontWeight="400" fontSize="18px">
+                                        <Typography fontWeight="400" fontSize="18px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="ft_g2_c1" />
                                         </Typography>
                                     </Box>
@@ -119,7 +119,7 @@ const Feature = () => {
                                             <FormattedMessage id="ft_g3_h1" />
                                         </Typography>
                                         <br />
-                                        <Typography fontWeight="400" fontSize="18px">
+                                        <Typography fontWeight="400" fontSize="18px" style={{ textAlign: 'justify' }}>
                                             <FormattedMessage id="ft_g3_c1" />
                                         </Typography>
                                     </Box>
