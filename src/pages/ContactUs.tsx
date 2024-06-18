@@ -66,9 +66,9 @@ const ContactUs = () => {
                         }
                     }}
                     borderRadius={5}
-                    mt="10px"
-                    px="20px"
-                    py="30px"
+                    // mt="10px"
+                    // px="20px"
+                    // py="30px"
                     pb="30px"
                     alignItems="left"
                 >
