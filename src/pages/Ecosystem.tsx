@@ -13,7 +13,7 @@ const Ecosystem = () => {
             <section id="summaryIntro" className="home__summary">
                 <Stack style={{ padding: '20px' }}>
                     <Container>
-                        <Grid mt="80px">
+                        <Grid mt="80px" fontFamily="Montserrat">
                             <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: '#414042' }}>
                                 <FormattedMessage id="eco_h1" />
                             </h1>

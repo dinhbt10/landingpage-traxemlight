@@ -16,7 +16,9 @@ import {
     Toolbar,
     Typography,
     useScrollTrigger,
-    Button
+    Button,
+    Menu,
+    MenuItem
 } from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -92,6 +94,22 @@ const AppBar = ({ ...others }) => {
         }
     };
 
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [selectedLanguage, setSelectedLanguage] = useState('dr_vi');
+
+    const handleClick = (event: any) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const handleMenuItemClick = (language: any) => {
+        setSelectedLanguage(language);
+        handleClose();
+    };
+
     return (
         <ElevationScroll {...others}>
             <MuiAppBar sx={{ width: '100%' }}>
@@ -119,20 +137,51 @@ const AppBar = ({ ...others }) => {
                         >
                             <Logo />
                         </Typography>
-                        <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }} spacing={2}>
+                        <Stack direction="row" sx={{ display: { xs: 'none', xl: 'block' } }} spacing={2}>
                             {nav.map((item, index) => (
                                 <Button key={item.key} color="inherit" onClick={() => handleScrollToSection(item.id, item.key)}>
                                     <Typography
                                         fontWeight={500}
-                                        sx={{ color: index === isActive ? '#00A64F' : 'none', textTransform: 'none' }}
+                                        sx={{
+                                            color: index === isActive ? '#00A64F' : 'none',
+                                            textTransform: 'none',
+                                            fontFamily: 'inter',
+                                            fontSize: '18px'
+                                        }}
                                     >
                                         {item.name}
                                     </Typography>
                                 </Button>
                             ))}
                         </Stack>
-                        <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }}>
+                        <Stack direction="row" sx={{ display: { xs: 'none', xl: 'block' } }}>
+                            {/* <div> */}
                             <Button
+                                sx={{
+                                    marginRight: '10px',
+                                    marginY: '22px',
+                                    padding: '13px 24px',
+                                    background: 'white',
+                                    color: '#00A64F',
+                                    borderRadius: '10px',
+                                    border: '1px solid #00A64F',
+                                    textTransform: 'none',
+                                    fontFamily: 'inter'
+                                }}
+                                onClick={handleClick}
+                            >
+                                <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
+                            </Button>
+                            <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
+                                <MenuItem onClick={handleClose}>
+                                    <FormattedMessage id="dr_vi" />
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <FormattedMessage id="dr_eng" />
+                                </MenuItem>
+                            </Menu>
+                            {/* </div> */}
+                            {/* <Button
                                 sx={{
                                     marginRight: '10px',
                                     marginY: '22px',
@@ -145,7 +194,7 @@ const AppBar = ({ ...others }) => {
                                 }}
                             >
                                 <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
-                            </Button>
+                            </Button> */}
                             <Button
                                 sx={{
                                     marginY: '22px',
@@ -154,6 +203,7 @@ const AppBar = ({ ...others }) => {
                                     color: '#00A64F',
                                     borderRadius: '10px',
                                     border: '1px solid #00A64F',
+                                    fontFamily: 'inter',
                                     textTransform: 'none'
                                 }}
                             >
@@ -166,6 +216,8 @@ const AppBar = ({ ...others }) => {
                                     padding: '5px 14px',
                                     background: '#00A64F',
                                     marginLeft: '10px',
+                                    fontFamily: 'inter',
+
                                     ':hover': { background: '#00A64F', color: 'white' },
                                     textTransform: 'none'
                                 }}
@@ -177,7 +229,7 @@ const AppBar = ({ ...others }) => {
                             sx={{
                                 display: {
                                     xs: 'block',
-                                    lg: 'none',
+                                    xl: 'none',
                                     padding: '20px'
                                 }
                             }}

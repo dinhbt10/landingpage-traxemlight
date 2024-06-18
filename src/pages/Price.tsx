@@ -40,7 +40,7 @@ function Price() {
         <>
             <section id="price" className="home__summary">
                 <Container>
-                    <Grid mt="80px">
+                    <Grid mt="80px" fontFamily="Montserrat">
                         <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>
                             <FormattedMessage id="price_h1" />
                         </h1>
@@ -49,7 +49,7 @@ function Price() {
                             <Grid container item xs={12} sm={12} md={12} spacing={2}>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="10%"
@@ -68,73 +68,139 @@ function Price() {
                                         </Box>
                                         <br />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="32px" textAlign="center" color="#00A64F">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="32px"
+                                                textAlign="center"
+                                                color="#00A64F"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="25" />
                                             </Typography>
-                                            <Typography fontWeight="500" fontSize="18px" lineHeight="29.26px" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="18px"
+                                                lineHeight="29.26px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="c_starter" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="1m" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="30d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumScan" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumQR" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="500QR" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="50d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="storage" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="2gb" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="max_user" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="10" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="bonus1" />
                                             </Typography>
                                             <br />
@@ -142,15 +208,19 @@ function Price() {
                                                 <Button
                                                     sx={{
                                                         borderRadius: '10px',
+                                                        height: '52px',
                                                         color: 'white',
                                                         padding: '5px 14px',
                                                         width: '100%',
                                                         background: '#00A64F',
                                                         marginLeft: '10px',
-                                                        ':hover': { background: '#00A64F', color: 'white' }
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
                                                     }}
                                                 >
-                                                    <FormattedMessage id="btnBuy" />
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnBuy" />
+                                                    </Typography>
                                                 </Button>
                                             </Box>
                                         </Box>
@@ -158,7 +228,7 @@ function Price() {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -177,73 +247,139 @@ function Price() {
                                         </Box>
                                         <br />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="32px" textAlign="center" color="#00A64F">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="32px"
+                                                textAlign="center"
+                                                color="#00A64F"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="300" />
                                             </Typography>
-                                            <Typography fontWeight="500" fontSize="18px" lineHeight="29.26px" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="18px"
+                                                lineHeight="29.26px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="c_basic" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="1y" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="90d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumScan" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumQR" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="6000QR" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="50d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="storage" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="5gb" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="max_user" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="100" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="bonus2" />
                                             </Typography>
                                             <br />
@@ -252,14 +388,20 @@ function Price() {
                                                     sx={{
                                                         borderRadius: '10px',
                                                         color: 'white',
+                                                        height: '52px',
+
+                                                        fontSize: '16px',
                                                         padding: '5px 14px',
                                                         width: '100%',
                                                         background: '#00A64F',
                                                         marginLeft: '10px',
-                                                        ':hover': { background: '#00A64F', color: 'white' }
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
                                                     }}
                                                 >
-                                                    <FormattedMessage id="btnBuy" />
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnBuy" />
+                                                    </Typography>
                                                 </Button>
                                             </Box>
                                         </Box>
@@ -267,7 +409,7 @@ function Price() {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -286,73 +428,139 @@ function Price() {
                                         </Box>
                                         <br />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="32px" textAlign="center" color="#00A64F">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="32px"
+                                                textAlign="center"
+                                                color="#00A64F"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="900" />
                                             </Typography>
-                                            <Typography fontWeight="500" fontSize="18px" lineHeight="29.26px" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="18px"
+                                                lineHeight="29.26px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="c_advanced" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="1y" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="90d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumScan" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumQR" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="20000QR" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="50d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="storage" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="20gb" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="max_user" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="500" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
                                             <br />
@@ -360,16 +568,22 @@ function Price() {
                                                 <Button
                                                     sx={{
                                                         borderRadius: '10px',
+                                                        fontSize: '16px',
                                                         color: 'white',
                                                         padding: '5px 14px',
+                                                        height: '52px',
+
                                                         width: '100%',
                                                         background: '#00A64F',
                                                         marginLeft: '10px',
                                                         ':hover': { background: '#00A64F', color: 'white' },
-                                                        border: ' 1px solid white'
+                                                        border: ' 1px solid white',
+                                                        fontFamily: 'Montserrat'
                                                     }}
                                                 >
-                                                    <FormattedMessage id="btnBuy" />
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnBuy" />
+                                                    </Typography>
                                                 </Button>
                                             </Box>
                                         </Box>
@@ -377,7 +591,7 @@ function Price() {
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -396,73 +610,139 @@ function Price() {
                                         </Box>
                                         <br />
                                         <Box>
-                                            <Typography fontWeight="600" fontSize="32px" textAlign="center" color="#00A64F">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="32px"
+                                                textAlign="center"
+                                                color="#00A64F"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="hd_contact" />
                                             </Typography>
-                                            <Typography fontWeight="500" fontSize="18px" lineHeight="29.26px" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="18px"
+                                                lineHeight="29.26px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="c_pro" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="time2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="90d" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumScan" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sumQR" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="hd_contact" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="storage" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="hd_contact" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="max_user" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
-                                            <Typography fontWeight="500" fontSize="12px" color="#8F8F8F" textAlign="center">
+                                            <Typography
+                                                fontWeight="500"
+                                                fontSize="12px"
+                                                color="#8F8F8F"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                            >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center">
+                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
                                             <br />
@@ -470,15 +750,21 @@ function Price() {
                                                 <Button
                                                     sx={{
                                                         borderRadius: '10px',
+                                                        height: '52px',
+
                                                         color: 'white',
                                                         padding: '5px 14px',
+                                                        fontSize: '16px',
                                                         width: '100%',
                                                         background: '#00A64F',
                                                         marginLeft: '10px',
-                                                        ':hover': { background: '#00A64F', color: 'white' }
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
                                                     }}
                                                 >
-                                                    <FormattedMessage id="btnBuy" />
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnBuy" />
+                                                    </Typography>
                                                 </Button>
                                             </Box>
                                         </Box>

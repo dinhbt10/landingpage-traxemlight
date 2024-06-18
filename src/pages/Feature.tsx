@@ -11,7 +11,7 @@ const Feature = () => {
         <>
             <section id="feature" className="home__intro">
                 <Container>
-                    <Grid mt="80px">
+                    <Grid mt="80px" fontFamily="Montserrat">
                         <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>
                             {' '}
                             <FormattedMessage id="ft_h1" />
@@ -19,7 +19,6 @@ const Feature = () => {
                         <Grid container item xs={12} sm={12} md={12}>
                             <Grid item xs={12} sm={12} md={4}>
                                 <Typography
-                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="black"
                                     width="100%"
@@ -46,6 +45,7 @@ const Feature = () => {
                                         <Typography
                                             fontWeight="600"
                                             lineHeight="29.26px"
+                                            fontFamily="Montserrat"
                                             sx={{
                                                 fontSize: {
                                                     xs: '22px',
@@ -56,7 +56,12 @@ const Feature = () => {
                                             <FormattedMessage id="ft_g1_h1" />
                                         </Typography>
                                         <br />
-                                        <Typography fontWeight="400" fontSize="18px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="ft_g1_c1" />
                                         </Typography>
                                     </Box>
@@ -64,7 +69,6 @@ const Feature = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={4}>
                                 <Typography
-                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="black"
                                     width="100%"
@@ -91,6 +95,7 @@ const Feature = () => {
                                         <Typography
                                             fontWeight="600"
                                             lineHeight="29.26px"
+                                            fontFamily="Montserrat"
                                             sx={{
                                                 fontSize: {
                                                     xs: '22px',
@@ -101,7 +106,12 @@ const Feature = () => {
                                             <FormattedMessage id="ft_g2_h1" />
                                         </Typography>
                                         <br />
-                                        <Typography fontWeight="400" fontSize="18px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="ft_g2_c1" />
                                         </Typography>
                                     </Box>
@@ -109,7 +119,6 @@ const Feature = () => {
                             </Grid>
                             <Grid item xs={12} sm={12} md={4}>
                                 <Typography
-                                    fontStyle="Montserrat"
                                     fontWeight="500"
                                     color="black"
                                     width="100%"
@@ -136,6 +145,7 @@ const Feature = () => {
                                         <Typography
                                             fontWeight="600"
                                             lineHeight="29.26px"
+                                            fontFamily="Montserrat"
                                             sx={{
                                                 fontSize: {
                                                     xs: '22px',
@@ -146,7 +156,12 @@ const Feature = () => {
                                             <FormattedMessage id="ft_g3_h1" />
                                         </Typography>
                                         <br />
-                                        <Typography fontWeight="400" fontSize="18px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="ft_g3_c1" />
                                         </Typography>
                                     </Box>

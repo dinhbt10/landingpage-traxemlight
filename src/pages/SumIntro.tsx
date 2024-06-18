@@ -25,7 +25,7 @@ const SumIntro = () => {
                             <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="10%">
                                 <Typography
                                     fontWeight="600"
-                                    fontStyle="Montserrat"
+                                    fontFamily="Montserrat"
                                     color="#00A64F"
                                     width="100%"
                                     px="10%"
@@ -41,7 +41,7 @@ const SumIntro = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    fontStyle="Montserrat"
+                                    fontFamily="Montserrat"
                                     fontWeight="500"
                                     color="#393939"
                                     width="100%"
@@ -66,7 +66,7 @@ const SumIntro = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    fontStyle="Montserrat"
+                                    fontFamily="Montserrat"
                                     fontWeight="500"
                                     color="#393939"
                                     width="100%"
@@ -87,10 +87,15 @@ const SumIntro = () => {
                                     <FormattedMessage id="intro_ct6" />
                                 </Typography>{' '}
                                 <br />
-                                <Typography fontStyle="Montserrat" fontWeight="500" color="#393939" width="100%" px="10%" align="justify">
+                                <Typography fontFamily="Montserrat" fontWeight="500" color="#393939" width="100%" px="10%" align="justify">
                                     <Button
                                         sx={{
                                             borderRadius: '41px',
+                                            fontSize: {
+                                                sx: '16px',
+                                                sm: '16px',
+                                                lg: '18px'
+                                            },
                                             color: 'white',
                                             padding: '10px 15px',
                                             background: '#00A64F',

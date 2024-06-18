@@ -80,7 +80,7 @@ const ContactUs = () => {
                                         <Box flex="1" minWidth="300px" bgcolor="transparent" gap={'40px'}>
                                             <Typography
                                                 fontWeight="600"
-                                                fontStyle="Montserrat"
+                                                fontFamily="Montserrat"
                                                 color="#414042"
                                                 // px="10%"
                                                 sx={{
@@ -108,8 +108,8 @@ const ContactUs = () => {
                                                 align="justify"
                                                 sx={{
                                                     fontSize: {
-                                                        xs: '16px',
-                                                        sm: '16px',
+                                                        xs: '18px',
+                                                        sm: '18px',
                                                         lg: '18px'
                                                     }
                                                 }}
@@ -124,8 +124,8 @@ const ContactUs = () => {
                                                 align="justify"
                                                 sx={{
                                                     fontSize: {
-                                                        xs: '16px',
-                                                        sm: '16px',
+                                                        xs: '18px',
+                                                        sm: '18px',
                                                         lg: '18px'
                                                     }
                                                 }}
@@ -134,15 +134,15 @@ const ContactUs = () => {
                                             </Typography>
                                             <br />
                                             <Typography
-                                                fontStyle="Montserrat"
+                                                fontFamily="Montserrat"
                                                 fontWeight="600"
                                                 color="#414042"
                                                 width="100%"
                                                 align="justify"
                                                 sx={{
                                                     fontSize: {
-                                                        xs: '16px',
-                                                        sm: '16px',
+                                                        xs: '18px',
+                                                        sm: '18px',
                                                         lg: '18px'
                                                     }
                                                 }}
@@ -151,7 +151,7 @@ const ContactUs = () => {
                                             </Typography>
                                             <br />
                                             <Box
-                                                // fontStyle="Montserrat"
+                                                //  fontFamily="Montserrat"
                                                 // fontWeight="600"
                                                 // color="#414042"
                                                 width="100%"
@@ -193,7 +193,7 @@ const ContactUs = () => {
                                             <br />
 
                                             <Typography
-                                                fontStyle="Montserrat"
+                                                fontFamily="Montserrat"
                                                 fontWeight="500"
                                                 color="#414042"
                                                 width="100%"
@@ -215,8 +215,8 @@ const ContactUs = () => {
                                                     textAlign="left"
                                                     sx={{
                                                         fontSize: {
-                                                            xs: '16px',
-                                                            sm: '16px',
+                                                            xs: '20px',
+                                                            sm: '20px',
                                                             lg: '20px'
                                                         },
                                                         marginBottom: '10px'
@@ -230,6 +230,7 @@ const ContactUs = () => {
                                                         fontWeight="500"
                                                         fontSize="14px"
                                                         lineHeight="24px"
+                                                        fontFamily="inter"
                                                         sx={{
                                                             textAlign: 'left',
                                                             width: {
@@ -240,7 +241,7 @@ const ContactUs = () => {
                                                     >
                                                         <FormattedMessage id="contact_mst" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px">
+                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" fontFamily="inter">
                                                         <FormattedMessage id="contact_mst2" />
                                                     </Typography>
                                                 </Box>
@@ -250,6 +251,7 @@ const ContactUs = () => {
                                                         fontWeight="500"
                                                         fontSize="14px"
                                                         lineHeight="24px"
+                                                        fontFamily="inter"
                                                         sx={{
                                                             textAlign: 'left',
                                                             width: {
@@ -260,7 +262,13 @@ const ContactUs = () => {
                                                     >
                                                         <FormattedMessage id="contact_address" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" flex="1">
+                                                    <Typography
+                                                        fontWeight="400"
+                                                        fontSize="14px"
+                                                        lineHeight="24px"
+                                                        flex="1"
+                                                        fontFamily="inter"
+                                                    >
                                                         <FormattedMessage id="contact_address2" />
                                                     </Typography>
                                                 </Box>
@@ -270,6 +278,7 @@ const ContactUs = () => {
                                                         fontWeight="500"
                                                         fontSize="14px"
                                                         lineHeight="24px"
+                                                        fontFamily="inter"
                                                         sx={{
                                                             textAlign: 'left',
                                                             width: {
@@ -280,7 +289,13 @@ const ContactUs = () => {
                                                     >
                                                         <FormattedMessage id="contact_phone" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" flex="1">
+                                                    <Typography
+                                                        fontWeight="400"
+                                                        fontSize="14px"
+                                                        lineHeight="24px"
+                                                        flex="1"
+                                                        fontFamily="inter"
+                                                    >
                                                         <FormattedMessage id="contact_phone2" />
                                                     </Typography>
                                                 </Box>
@@ -290,6 +305,7 @@ const ContactUs = () => {
                                                         fontWeight="500"
                                                         fontSize="14px"
                                                         lineHeight="24px"
+                                                        fontFamily="inter"
                                                         sx={{
                                                             textAlign: 'left',
                                                             width: {
@@ -300,7 +316,13 @@ const ContactUs = () => {
                                                     >
                                                         <FormattedMessage id="contact_email" />
                                                     </Typography>
-                                                    <Typography fontWeight="400" fontSize="14px" lineHeight="24px" flex="1">
+                                                    <Typography
+                                                        fontWeight="400"
+                                                        fontSize="14px"
+                                                        lineHeight="24px"
+                                                        flex="1"
+                                                        fontFamily="inter"
+                                                    >
                                                         <FormattedMessage id="contact_email2" />
                                                     </Typography>
                                                 </Box>
@@ -434,9 +456,10 @@ const ContactUs = () => {
                                                                     direction="row"
                                                                     gap={1}
                                                                     alignItems="center"
-                                                                    sx={{ width: { xs: '100%' } }}
+                                                                    // sx={{ width: { xs: '100%' } }}
                                                                 >
                                                                     <Captcha ref={captchaRef} />
+
                                                                     <TextField
                                                                         label={<FormattedMessage id="lb_captcha" />}
                                                                         value={value}
@@ -457,11 +480,14 @@ const ContactUs = () => {
                                                                 },
                                                                 color: 'white',
                                                                 backgroundColor: '#00A64F',
-                                                                ':hover': { color: 'white', background: '#00A64F' }
+                                                                ':hover': { color: 'white', background: '#00A64F' },
+                                                                textTransform: 'none'
                                                             }}
                                                             disabled={isSubmitting}
                                                         >
-                                                            <FormattedMessage id="contact_btn" />
+                                                            <Typography sx={{ fontSize: '15px', fontFamily: 'inter' }}>
+                                                                <FormattedMessage id="contact_btn" />
+                                                            </Typography>
                                                         </Button>
                                                     </Grid>
                                                 </Grid>

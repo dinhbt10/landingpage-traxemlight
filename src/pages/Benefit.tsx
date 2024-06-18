@@ -22,7 +22,7 @@ const Benefit = () => {
                             <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="10%">
                                 <Typography
                                     fontWeight="600"
-                                    fontStyle="Montserrat"
+                                    fontFamily="Montserrat"
                                     color="white"
                                     width="100%"
                                     px="10%"
@@ -38,7 +38,7 @@ const Benefit = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    fontStyle="Montserrat"
+                                    // fontFamily="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"
@@ -63,6 +63,7 @@ const Benefit = () => {
                                             <Typography
                                                 fontWeight="600"
                                                 lineHeight="26.82px"
+                                                fontFamily="Montserrat"
                                                 sx={{
                                                     fontSize: {
                                                         xs: '20px',
@@ -72,7 +73,7 @@ const Benefit = () => {
                                             >
                                                 <FormattedMessage id="bnf_ct1" />
                                             </Typography>
-                                            <Typography fontWeight="400" fontSize="16px">
+                                            <Typography fontWeight="400" fontSize="16px" fontFamily="Montserrat">
                                                 <FormattedMessage id="bnf_ct2" />
                                             </Typography>
                                         </Box>
@@ -80,7 +81,7 @@ const Benefit = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    fontStyle="Montserrat"
+                                    fontFamily="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"
@@ -106,6 +107,7 @@ const Benefit = () => {
                                             <Typography
                                                 fontWeight="600"
                                                 lineHeight="26.82px"
+                                                fontFamily="Montserrat"
                                                 sx={{
                                                     fontSize: {
                                                         xs: '20px',
@@ -115,7 +117,7 @@ const Benefit = () => {
                                             >
                                                 <FormattedMessage id="bnf_ct3" />
                                             </Typography>
-                                            <Typography fontWeight="400" fontSize="16px">
+                                            <Typography fontWeight="400" fontSize="16px" fontFamily="Montserrat">
                                                 <FormattedMessage id="bnf_ct4" />{' '}
                                             </Typography>
                                         </Box>
@@ -123,7 +125,7 @@ const Benefit = () => {
                                 </Typography>{' '}
                                 <br />
                                 <Typography
-                                    fontStyle="Montserrat"
+                                    fontFamily="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"
@@ -149,6 +151,7 @@ const Benefit = () => {
                                             <Typography
                                                 fontWeight="600"
                                                 lineHeight="26.82px"
+                                                fontFamily="Montserrat"
                                                 sx={{
                                                     fontSize: {
                                                         xs: '20px',
@@ -158,7 +161,7 @@ const Benefit = () => {
                                             >
                                                 <FormattedMessage id="bnf_ct5" />{' '}
                                             </Typography>
-                                            <Typography fontWeight="400" fontSize="16px">
+                                            <Typography fontWeight="400" fontSize="16px" fontFamily="Montserrat">
                                                 <FormattedMessage id="bnf_ct6" />
                                             </Typography>
                                         </Box>

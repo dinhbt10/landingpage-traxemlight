@@ -11,7 +11,7 @@ const Procedure = () => {
         <>
             <section id="procedure" className="home__summary">
                 <Container>
-                    <Grid mt="80px">
+                    <Grid mt="80px" fontFamily="Montserrat">
                         <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>
                             <FormattedMessage id="pr_h1" />
                         </h1>
@@ -24,7 +24,7 @@ const Procedure = () => {
                             <Grid item xs={12} sm={12} md={6}>
                                 <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="5%" px="5%">
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -43,6 +43,7 @@ const Procedure = () => {
                                                 <Typography
                                                     fontWeight="600"
                                                     lineHeight="29.26px"
+                                                    fontFamily="Montserrat"
                                                     sx={{
                                                         fontSize: {
                                                             xs: '20px',
@@ -54,13 +55,18 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="pr_ct_create" />
                                         </Typography>
                                     </Typography>
                                     <br />
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -78,6 +84,7 @@ const Procedure = () => {
                                             <Box>
                                                 <Typography
                                                     fontWeight="600"
+                                                    fontFamily="Montserrat"
                                                     sx={{
                                                         fontSize: {
                                                             xs: '20px',
@@ -90,13 +97,18 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="pt_ct_info" />
                                         </Typography>
                                     </Typography>
                                     <br />
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -114,6 +126,7 @@ const Procedure = () => {
                                             <Box>
                                                 <Typography
                                                     fontWeight="600"
+                                                    fontFamily="Montserrat"
                                                     sx={{
                                                         fontSize: {
                                                             xs: '20px',
@@ -126,13 +139,18 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="pt_ct_print" />
                                         </Typography>
                                     </Typography>
                                     <br />
                                     <Typography
-                                        fontStyle="Montserrat"
+                                        fontFamily="Montserrat"
                                         fontWeight="500"
                                         color="black"
                                         width="100%"
@@ -150,6 +168,7 @@ const Procedure = () => {
                                             <Box>
                                                 <Typography
                                                     fontWeight="600"
+                                                    fontFamily="Montserrat"
                                                     sx={{
                                                         fontSize: {
                                                             xs: '20px',
@@ -162,7 +181,12 @@ const Procedure = () => {
                                                 </Typography>
                                             </Box>
                                         </Box>
-                                        <Typography fontWeight="400" fontSize="16px" style={{ textAlign: 'justify' }}>
+                                        <Typography
+                                            fontWeight="400"
+                                            fontSize="16px"
+                                            style={{ textAlign: 'justify' }}
+                                            fontFamily="Montserrat"
+                                        >
                                             <FormattedMessage id="pt_ct_scan" />
                                         </Typography>
                                     </Typography>
