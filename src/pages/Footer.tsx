@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 
 import Facebook from 'assets/footer/Facebook.svg';
 import Youtube from 'assets/footer/Youtube.svg';

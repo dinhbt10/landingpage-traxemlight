@@ -17,7 +17,6 @@ import traXemMarket from 'assets/contact/TraXemMarket.svg';
 import traXemSCM from 'assets/contact/TraXemSCM.svg';
 import { FormattedMessage } from 'react-intl';
 import { Container } from '@mui/system';
-
 const defaultValues = {
     name: '',
     phoneNum: '',

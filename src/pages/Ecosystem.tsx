@@ -1,5 +1,4 @@
 import { Box, Container, Grid, Stack } from '@mui/material';
-import { fontSize } from '@mui/system';
 import imgEco1 from 'assets/ecosystem/ImgEco1.svg';
 import imgEco2 from 'assets/ecosystem/ImgEco2.svg';
 import traXemAgri from 'assets/ecosystem/TraXemAgri.svg';

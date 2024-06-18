@@ -1,5 +1,5 @@
 //material
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import iconQR from 'assets/feature/IconQR.svg';
 import iconART from 'assets/feature/IconArt.svg';
 import iconTemplate from 'assets/feature/IconTemplate.svg';

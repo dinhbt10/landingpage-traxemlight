@@ -95,7 +95,7 @@ const AppBar = ({ ...others }) => {
     };
 
     const [anchorEl, setAnchorEl] = useState(null);
-    const [selectedLanguage, setSelectedLanguage] = useState('dr_vi');
+    // const [selectedLanguage, setSelectedLanguage] = useState('dr_vi');
 
     const handleClick = (event: any) => {
         setAnchorEl(event.currentTarget);
@@ -105,10 +105,10 @@ const AppBar = ({ ...others }) => {
         setAnchorEl(null);
     };
 
-    const handleMenuItemClick = (language: any) => {
-        setSelectedLanguage(language);
-        handleClose();
-    };
+    // const handleMenuItemClick = (language: any) => {
+    //     setSelectedLanguage(language);
+    //     handleClose();
+    // };
 
     return (
         <ElevationScroll {...others}>
