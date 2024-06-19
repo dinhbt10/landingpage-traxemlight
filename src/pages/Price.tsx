@@ -206,6 +206,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_4`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
@@ -385,6 +391,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_1`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         color: 'white',
@@ -566,6 +578,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_2`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         fontSize: '16px',
@@ -748,6 +766,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_3`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',

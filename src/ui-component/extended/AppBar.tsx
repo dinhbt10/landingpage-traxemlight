@@ -196,6 +196,7 @@ const AppBar = ({ ...others }) => {
                                 <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
                             </Button> */}
                             <Button
+                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/register`, '_blank')}
                                 sx={{
                                     marginY: '22px',
                                     padding: '13px 24px',
@@ -210,6 +211,7 @@ const AppBar = ({ ...others }) => {
                                 <FormattedMessage id="btn_register" />
                             </Button>
                             <Button
+                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/login`, '_blank')}
                                 sx={{
                                     borderRadius: '10px',
                                     color: 'white',
