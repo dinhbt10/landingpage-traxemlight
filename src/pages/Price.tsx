@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-
+import React, { useState } from 'react';
 import iconPrice from 'assets/price/IconPrice.svg';
 import { FormattedMessage } from 'react-intl';
 const typographyStyle = {
@@ -35,7 +35,20 @@ const typographyStyle2 = {
         lg: '18px'
     }
 };
+
 function Price() {
+    // const [isActive, setIsActive] = useState(0);
+    const handleScrollToSection = (sectionId: string, key?: number) => {
+        // if (key || key === 0) {
+        //     setIsActive(key);
+        // }
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const topOffset = section.offsetTop - 110;
+            window.scrollTo({ top: topOffset, behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
             <section id="price" className="home__summary">
@@ -206,6 +219,26 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
+                                                    onClick={() => handleScrollToSection('contact')}
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        height: '52px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
                                                     onClick={() =>
                                                         window.open(
                                                             `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_4`,
@@ -228,7 +261,7 @@ function Price() {
                                                         <FormattedMessage id="btnBuy" />
                                                     </Typography>
                                                 </Button>
-                                            </Box>
+                                            </Box>{' '}
                                         </Box>
                                     </Typography>
                                 </Grid>
@@ -389,6 +422,26 @@ function Price() {
                                                 <FormattedMessage id="bonus2" />
                                             </Typography>
                                             <br />
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
+                                                    onClick={() => handleScrollToSection('contact')}
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        height: '52px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
                                                     onClick={() =>
@@ -578,6 +631,29 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
+                                                    onClick={() => handleScrollToSection('contact')}
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        fontSize: '16px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        height: '52px',
+
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        border: ' 1px solid white',
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
                                                     onClick={() =>
                                                         window.open(
                                                             `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_2`,
@@ -764,6 +840,26 @@ function Price() {
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
                                             <br />
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
+                                                    onClick={() => handleScrollToSection('contact')}
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        height: '52px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
                                                     onClick={() =>

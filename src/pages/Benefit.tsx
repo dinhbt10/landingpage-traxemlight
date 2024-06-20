@@ -17,7 +17,7 @@ const Benefit = () => {
                 }}
             >
                 <Container>
-                    <Grid mt="80px" container>
+                    <Grid mt="80px" container height={'100%'}>
                         <Grid item xs={12} sm={12} md={6}>
                             <Stack alignItems="start" height="100%" width="100%" justifyContent="center" pt="10%">
                                 <Typography
@@ -175,16 +175,26 @@ const Benefit = () => {
                             xs={12}
                             sm={12}
                             md={6}
-                            style={{
+                            sx={{
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                padding: '30px'
+                                padding: '30px',
+                                width: {
+                                    lg: '611px',
+                                    sm: '611px',
+                                    xs: '350px'
+                                },
+                                height: {
+                                    lg: '405px',
+                                    sm: '405px',
+                                    xs: '232px'
+                                }
                             }}
                         >
                             <iframe
-                                width="611px"
-                                height="405px"
+                                width="90%"
+                                height="100%"
                                 src="https://www.youtube.com/embed/9q14JNH6CHU"
                                 title="YouTube video player"
                                 style={{
