@@ -24,8 +24,8 @@ import CallIcon from '@mui/icons-material/Call';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { FormattedMessage } from 'react-intl';
-
-// project imports
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import LoginIcon from '@mui/icons-material/Login'; // project imports
 import Logo from 'ui-component/Logo';
 
 // assets
@@ -137,7 +137,7 @@ const AppBar = ({ ...others }) => {
                         >
                             <Logo />
                         </Typography>
-                        <Stack direction="row" sx={{ display: { xs: 'none', xl: 'block' } }} spacing={2}>
+                        <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }} spacing={2}>
                             {nav.map((item, index) => (
                                 <Button key={item.key} color="inherit" onClick={() => handleScrollToSection(item.id, item.key)}>
                                     <Typography
@@ -154,7 +154,7 @@ const AppBar = ({ ...others }) => {
                                 </Button>
                             ))}
                         </Stack>
-                        <Stack direction="row" sx={{ display: { xs: 'none', xl: 'block' } }}>
+                        <Stack direction="row" sx={{ display: { xs: 'none', lg: 'block' } }}>
                             {/* <div> */}
                             <Button
                                 sx={{
@@ -231,7 +231,7 @@ const AppBar = ({ ...others }) => {
                             sx={{
                                 display: {
                                     xs: 'block',
-                                    xl: 'none',
+                                    lg: 'none',
                                     padding: '20px'
                                 }
                             }}
@@ -306,6 +306,32 @@ const AppBar = ({ ...others }) => {
                                                     </ListItemIcon>
                                                     <ListItemText>
                                                         <FormattedMessage id="hd_contact" />
+                                                    </ListItemText>
+                                                </ListItemButton>
+                                            </Link>
+                                            <Link
+                                                style={{ textDecoration: 'none' }}
+                                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/login`, '_blank')}
+                                            >
+                                                <ListItemButton component="a">
+                                                    <ListItemIcon>
+                                                        <LoginIcon />
+                                                    </ListItemIcon>
+                                                    <ListItemText>
+                                                        <FormattedMessage id="btn_login" />
+                                                    </ListItemText>
+                                                </ListItemButton>
+                                            </Link>
+                                            <Link
+                                                style={{ textDecoration: 'none' }}
+                                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/register`, '_blank')}
+                                            >
+                                                <ListItemButton component="a">
+                                                    <ListItemIcon>
+                                                        <AppRegistrationIcon />
+                                                    </ListItemIcon>
+                                                    <ListItemText>
+                                                        <FormattedMessage id="btn_register" />
                                                     </ListItemText>
                                                 </ListItemButton>
                                             </Link>
