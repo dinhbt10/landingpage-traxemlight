@@ -196,7 +196,9 @@ const AppBar = ({ ...others }) => {
                                 <FormattedMessage id="btn_register" />
                             </Button>
                             <Button
-                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/login`, '_blank')}
+                                onClick={() =>
+                                    window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}?package=package_id_4&mode=login`, '_blank')
+                                }
                                 sx={{
                                     borderRadius: '10px',
                                     color: 'white',
