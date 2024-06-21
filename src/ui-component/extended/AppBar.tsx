@@ -24,8 +24,8 @@ import CallIcon from '@mui/icons-material/Call';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { FormattedMessage } from 'react-intl';
-
-// project imports
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import LoginIcon from '@mui/icons-material/Login'; // project imports
 import Logo from 'ui-component/Logo';
 
 // assets
@@ -137,7 +137,15 @@ const AppBar = ({ ...others }) => {
                         >
                             <Logo />
                         </Typography>
-                        <Stack direction="row" sx={{ display: { xs: 'none', xl: 'block' } }} spacing={2}>
+                        <Stack
+                            direction="row"
+                            sx={{
+                                display: { xs: 'none', lg: 'block' },
+                                '@media (min-width: 1279px)': { display: 'block' },
+                                '@media (max-width: 1279px)': { display: 'none' }
+                            }}
+                            spacing={2}
+                        >
                             {nav.map((item, index) => (
                                 <Button key={item.key} color="inherit" onClick={() => handleScrollToSection(item.id, item.key)}>
                                     <Typography
@@ -154,7 +162,14 @@ const AppBar = ({ ...others }) => {
                                 </Button>
                             ))}
                         </Stack>
-                        <Stack direction="row" sx={{ display: { xs: 'none', xl: 'block' } }}>
+                        <Stack
+                            direction="row"
+                            sx={{
+                                display: { xs: 'block', lg: 'none' },
+                                '@media (min-width: 1279px)': { display: 'block' },
+                                '@media (max-width: 1279px)': { display: 'none' }
+                            }}
+                        >
                             {/* <div> */}
                             <Button
                                 sx={{
@@ -180,21 +195,7 @@ const AppBar = ({ ...others }) => {
                                     <FormattedMessage id="dr_eng" />
                                 </MenuItem>
                             </Menu>
-                            {/* </div> */}
-                            {/* <Button
-                                sx={{
-                                    marginRight: '10px',
-                                    marginY: '22px',
-                                    padding: '13px 24px',
-                                    background: 'white',
-                                    color: '#00A64F',
-                                    borderRadius: '10px',
-                                    border: '1px solid #00A64F',
-                                    textTransform: 'none'
-                                }}
-                            >
-                                <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
-                            </Button> */}
+
                             <Button
                                 onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/register`, '_blank')}
                                 sx={{
@@ -229,11 +230,10 @@ const AppBar = ({ ...others }) => {
                         </Stack>
                         <Stack
                             sx={{
-                                display: {
-                                    xs: 'block',
-                                    xl: 'none',
-                                    padding: '20px'
-                                }
+                                display: { xs: 'block', lg: 'none' },
+                                '@media (max-width: 1280px)': { display: 'block' },
+                                '@media (min-width: 1279px)': { display: 'none' },
+                                padding: '20px'
                             }}
                             direction="row"
                         >
@@ -306,6 +306,32 @@ const AppBar = ({ ...others }) => {
                                                     </ListItemIcon>
                                                     <ListItemText>
                                                         <FormattedMessage id="hd_contact" />
+                                                    </ListItemText>
+                                                </ListItemButton>
+                                            </Link>
+                                            <Link
+                                                style={{ textDecoration: 'none' }}
+                                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/login`, '_blank')}
+                                            >
+                                                <ListItemButton component="a">
+                                                    <ListItemIcon>
+                                                        <LoginIcon />
+                                                    </ListItemIcon>
+                                                    <ListItemText>
+                                                        <FormattedMessage id="btn_login" />
+                                                    </ListItemText>
+                                                </ListItemButton>
+                                            </Link>
+                                            <Link
+                                                style={{ textDecoration: 'none' }}
+                                                onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/register`, '_blank')}
+                                            >
+                                                <ListItemButton component="a">
+                                                    <ListItemIcon>
+                                                        <AppRegistrationIcon />
+                                                    </ListItemIcon>
+                                                    <ListItemText>
+                                                        <FormattedMessage id="btn_register" />
                                                     </ListItemText>
                                                 </ListItemButton>
                                             </Link>

@@ -1,5 +1,4 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-
 import iconPrice from 'assets/price/IconPrice.svg';
 import { FormattedMessage } from 'react-intl';
 const typographyStyle = {
@@ -35,7 +34,20 @@ const typographyStyle2 = {
         lg: '18px'
     }
 };
+
 function Price() {
+    // const [isActive, setIsActive] = useState(0);
+    const handleScrollToSection = (sectionId: string, key?: number) => {
+        // if (key || key === 0) {
+        //     setIsActive(key);
+        // }
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const topOffset = section.offsetTop - 110;
+            window.scrollTo({ top: topOffset, behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
             <section id="price" className="home__summary">
@@ -45,8 +57,34 @@ function Price() {
                             <FormattedMessage id="price_h1" />
                         </h1>
                         <br />
-                        <Box display="flex" flexWrap="wrap">
-                            <Grid container item xs={12} sm={12} md={12} spacing={2}>
+                        {/* <Box display="flex" flexWrap="wrap"> */}
+                        <Box
+                            sx={{
+                                overflowX: 'auto',
+                                display: 'flex',
+                                flexWrap: 'nowrap',
+                                '&::-webkit-scrollbar': {
+                                    height: '6px'
+                                }
+                                // '&::-webkit-scrollbar-thumb': {
+                                //     backgroundColor: '#888',
+                                //     borderRadius: '3px'
+                                // }
+                            }}
+                        >
+                            {/* <Grid container item xs={12} sm={12} md={12} spacing={2}> */}
+                            <Grid
+                                container
+                                spacing={2}
+                                sx={{
+                                    flexWrap: 'nowrap',
+                                    '& > .MuiGrid-item': {
+                                        flexShrink: 0,
+                                        width: { xs: '85%', sm: '45%', md: '25%' },
+                                        maxWidth: { xs: '85%', sm: '45%', md: '25%' }
+                                    }
+                                }}
+                            >
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
                                         fontFamily="Montserrat"
@@ -225,10 +263,30 @@ function Price() {
                                                     }}
                                                 >
                                                     <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
-                                                        <FormattedMessage id="btnBuy" />
+                                                        <FormattedMessage id="btnTry" />
                                                     </Typography>
                                                 </Button>
                                             </Box>
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
+                                                    onClick={() => handleScrollToSection('contact')}
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        height: '52px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnBuy" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>{' '}
                                         </Box>
                                     </Typography>
                                 </Grid>
@@ -397,6 +455,26 @@ function Price() {
                                                             '_blank'
                                                         )
                                                     }
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        height: '52px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
+                                                    onClick={() => handleScrollToSection('contact')}
                                                     sx={{
                                                         borderRadius: '10px',
                                                         color: 'white',
@@ -600,6 +678,29 @@ function Price() {
                                                     }}
                                                 >
                                                     <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
+                                                    onClick={() => handleScrollToSection('contact')}
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        fontSize: '16px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        height: '52px',
+
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        border: ' 1px solid white',
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
                                                         <FormattedMessage id="btnBuy" />
                                                     </Typography>
                                                 </Button>
@@ -772,6 +873,26 @@ function Price() {
                                                             '_blank'
                                                         )
                                                     }
+                                                    sx={{
+                                                        borderRadius: '10px',
+                                                        height: '52px',
+                                                        color: 'white',
+                                                        padding: '5px 14px',
+                                                        width: '100%',
+                                                        background: '#00A64F',
+                                                        marginLeft: '10px',
+                                                        ':hover': { background: '#00A64F', color: 'white' },
+                                                        fontFamily: 'Montserrat'
+                                                    }}
+                                                >
+                                                    <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
+                                                        <FormattedMessage id="btnTry" />
+                                                    </Typography>
+                                                </Button>
+                                            </Box>
+                                            <Box display="flex" justifyContent="center" mt={2}>
+                                                <Button
+                                                    onClick={() => handleScrollToSection('contact')}
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
