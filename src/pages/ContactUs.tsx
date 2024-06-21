@@ -172,7 +172,7 @@ const ContactUs = () => {
 
                                                     display: 'flex',
                                                     flexWrap: 'wrap',
-                                                    gap: 2,
+                                                    gap: { xs: 3, sm: 4, md: 5 },
                                                     marginBottom: {
                                                         lg: '15px',
                                                         xs: '15px'
@@ -332,14 +332,16 @@ const ContactUs = () => {
                                         <Grid
                                             style={{
                                                 backgroundColor: 'white',
-                                                padding: '40px',
+                                                paddingLeft: '40px',
+                                                paddingRight: '40px',
+                                                paddingTop: '10px',
+                                                paddingBottom: '40px',
                                                 borderRadius: '20px',
                                                 boxShadow: '2px 2px 2px 2px #AAA'
                                             }}
                                         >
                                             <form style={{ width: '100%', marginTop: '30px' }} onSubmit={handleSubmit(onSubmit)}>
                                                 <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}>
-                                                    {' '}
                                                     <FormattedMessage id="lb_fullname" />
                                                 </span>
                                                 <Controller
@@ -358,7 +360,18 @@ const ContactUs = () => {
                                                         />
                                                     )}
                                                 />
-                                                <Grid container direction="row" spacing={2} style={{ marginTop: '10px' }}>
+                                                <Grid
+                                                    container
+                                                    direction="row"
+                                                    spacing={2}
+                                                    sx={{
+                                                        marginTop: {
+                                                            xs: '5px',
+                                                            sm: '5px',
+                                                            lm: '10px'
+                                                        }
+                                                    }}
+                                                >
                                                     <Grid item xs={12} sm={6}>
                                                         <span
                                                             style={{

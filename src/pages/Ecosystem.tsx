@@ -13,7 +13,9 @@ const Ecosystem = () => {
                 <Stack style={{ padding: '20px' }}>
                     <Container>
                         <Grid mt="80px" fontFamily="Montserrat">
-                            <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: '#414042' }}>
+                            <h1
+                                style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: '#414042', lineHeight: 'normal' }}
+                            >
                                 <FormattedMessage id="eco_h1" />
                             </h1>
                             <h2 style={{ textAlign: 'center', fontWeight: '600', fontSize: '18px', color: '#414042' }}>
