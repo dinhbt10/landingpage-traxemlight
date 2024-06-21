@@ -1,5 +1,4 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import React, { useState } from 'react';
 import iconPrice from 'assets/price/IconPrice.svg';
 import { FormattedMessage } from 'react-intl';
 const typographyStyle = {
@@ -58,8 +57,34 @@ function Price() {
                             <FormattedMessage id="price_h1" />
                         </h1>
                         <br />
-                        <Box display="flex" flexWrap="wrap">
-                            <Grid container item xs={12} sm={12} md={12} spacing={2}>
+                        {/* <Box display="flex" flexWrap="wrap"> */}
+                        <Box
+                            sx={{
+                                overflowX: 'auto',
+                                display: 'flex',
+                                flexWrap: 'nowrap',
+                                '&::-webkit-scrollbar': {
+                                    height: '6px'
+                                }
+                                // '&::-webkit-scrollbar-thumb': {
+                                //     backgroundColor: '#888',
+                                //     borderRadius: '3px'
+                                // }
+                            }}
+                        >
+                            {/* <Grid container item xs={12} sm={12} md={12} spacing={2}> */}
+                            <Grid
+                                container
+                                spacing={2}
+                                sx={{
+                                    flexWrap: 'nowrap',
+                                    '& > .MuiGrid-item': {
+                                        flexShrink: 0,
+                                        width: { xs: '85%', sm: '45%', md: '25%' },
+                                        maxWidth: { xs: '85%', sm: '45%', md: '25%' }
+                                    }
+                                }}
+                            >
                                 <Grid item xs={12} sm={12} md={3}>
                                     <Typography
                                         fontFamily="Montserrat"
@@ -219,7 +244,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() => handleScrollToSection('contact')}
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_4`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
@@ -239,12 +269,7 @@ function Price() {
                                             </Box>
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() =>
-                                                        window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_4`,
-                                                            '_blank'
-                                                        )
-                                                    }
+                                                    onClick={() => handleScrollToSection('contact')}
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
@@ -424,7 +449,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() => handleScrollToSection('contact')}
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_1`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
@@ -444,12 +474,7 @@ function Price() {
                                             </Box>
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() =>
-                                                        window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_1`,
-                                                            '_blank'
-                                                        )
-                                                    }
+                                                    onClick={() => handleScrollToSection('contact')}
                                                     sx={{
                                                         borderRadius: '10px',
                                                         color: 'white',
@@ -631,7 +656,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() => handleScrollToSection('contact')}
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_2`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         fontSize: '16px',
@@ -654,12 +684,7 @@ function Price() {
                                             </Box>
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() =>
-                                                        window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_2`,
-                                                            '_blank'
-                                                        )
-                                                    }
+                                                    onClick={() => handleScrollToSection('contact')}
                                                     sx={{
                                                         borderRadius: '10px',
                                                         fontSize: '16px',
@@ -842,7 +867,12 @@ function Price() {
                                             <br />
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() => handleScrollToSection('contact')}
+                                                    onClick={() =>
+                                                        window.open(
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_3`,
+                                                            '_blank'
+                                                        )
+                                                    }
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
@@ -862,12 +892,7 @@ function Price() {
                                             </Box>
                                             <Box display="flex" justifyContent="center" mt={2}>
                                                 <Button
-                                                    onClick={() =>
-                                                        window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_3`,
-                                                            '_blank'
-                                                        )
-                                                    }
+                                                    onClick={() => handleScrollToSection('contact')}
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
