@@ -253,13 +253,13 @@ function Price() {
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
-                                                        color: 'white',
+                                                        color: 'black',
                                                         padding: '5px 14px',
                                                         width: '100%',
-                                                        background: '#00A64F',
                                                         marginLeft: '10px',
                                                         ':hover': { background: '#00A64F', color: 'white' },
-                                                        fontFamily: 'Montserrat'
+                                                        fontFamily: 'Montserrat',
+                                                        border: ' 1px solid #00A64F'
                                                     }}
                                                 >
                                                     <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
@@ -458,13 +458,13 @@ function Price() {
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
-                                                        color: 'white',
+                                                        color: 'black',
                                                         padding: '5px 14px',
                                                         width: '100%',
-                                                        background: '#00A64F',
                                                         marginLeft: '10px',
                                                         ':hover': { background: '#00A64F', color: 'white' },
-                                                        fontFamily: 'Montserrat'
+                                                        fontFamily: 'Montserrat',
+                                                        border: ' 1px solid #00A64F'
                                                     }}
                                                 >
                                                     <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>
@@ -876,13 +876,13 @@ function Price() {
                                                     sx={{
                                                         borderRadius: '10px',
                                                         height: '52px',
-                                                        color: 'white',
+                                                        color: 'black',
                                                         padding: '5px 14px',
                                                         width: '100%',
-                                                        background: '#00A64F',
                                                         marginLeft: '10px',
                                                         ':hover': { background: '#00A64F', color: 'white' },
-                                                        fontFamily: 'Montserrat'
+                                                        fontFamily: 'Montserrat',
+                                                        border: ' 1px solid #00A64F'
                                                     }}
                                                 >
                                                     <Typography sx={{ fontSize: '16px', fontFamily: 'Montserrat' }}>

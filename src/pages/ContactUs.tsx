@@ -150,11 +150,7 @@ const ContactUs = () => {
                                             </Typography>
                                             <br />
                                             <Box
-                                                //  fontFamily="Montserrat"
-                                                // fontWeight="600"
-                                                // color="#414042"
                                                 width="100%"
-                                                // align="justify"
                                                 sx={{
                                                     fontSize: {
                                                         xs: '16px',
@@ -164,10 +160,6 @@ const ContactUs = () => {
                                                     width: {
                                                         lg: '100%',
                                                         sm: '100%'
-                                                    },
-                                                    height: {
-                                                        // lg: '84px'
-                                                        // xs: '200px'
                                                     },
 
                                                     display: 'flex',
