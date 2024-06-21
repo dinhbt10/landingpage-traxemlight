@@ -83,7 +83,6 @@ const Ecosystem = () => {
                                                 <p
                                                     style={{
                                                         fontWeight: '500',
-                                                        // fontSize: '18px',
                                                         fontFamily: 'Inter',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',

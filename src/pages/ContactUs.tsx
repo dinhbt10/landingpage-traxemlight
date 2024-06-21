@@ -60,14 +60,10 @@ const ContactUs = () => {
                     sx={{
                         background: 'linear-gradient(180deg, #E6F7EE 90%, #E6F7EE 100%)',
                         flexDirection: {
-                            // xs: 'column-reverse',
                             sm: 'row'
                         }
                     }}
                     borderRadius={5}
-                    // mt="10px"
-                    // px="20px"
-                    // py="30px"
                     pb="30px"
                     alignItems="left"
                 >
@@ -81,7 +77,6 @@ const ContactUs = () => {
                                                 fontWeight="600"
                                                 fontFamily="Montserrat"
                                                 color="#414042"
-                                                // px="10%"
                                                 sx={{
                                                     fontSize: {
                                                         xs: '32px',
@@ -202,7 +197,6 @@ const ContactUs = () => {
                                                     fontWeight="700"
                                                     color="#414042"
                                                     width="100%"
-                                                    // px="10%"
                                                     textAlign="left"
                                                     sx={{
                                                         fontSize: {
@@ -373,7 +367,6 @@ const ContactUs = () => {
                                                                 color: 'black'
                                                             }}
                                                         >
-                                                            {' '}
                                                             <FormattedMessage id="lb_phone" />
                                                         </span>
                                                         <Controller
@@ -402,7 +395,6 @@ const ContactUs = () => {
                                                                 color: 'black'
                                                             }}
                                                         >
-                                                            {' '}
                                                             <FormattedMessage id="lb_email" />
                                                         </span>
                                                         <Controller
@@ -427,7 +419,6 @@ const ContactUs = () => {
                                                     <span
                                                         style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}
                                                     >
-                                                        {' '}
                                                         <FormattedMessage id="messenger" />
                                                     </span>
                                                     <Controller
@@ -454,14 +445,7 @@ const ContactUs = () => {
                                                             name="captvalue"
                                                             control={control}
                                                             render={({ field: { onChange, value } }) => (
-                                                                <Stack
-                                                                    mt={2}
-                                                                    mb={1}
-                                                                    direction="row"
-                                                                    gap={1}
-                                                                    alignItems="center"
-                                                                    // sx={{ width: { xs: '100%' } }}
-                                                                >
+                                                                <Stack mt={2} mb={1} direction="row" gap={1} alignItems="center">
                                                                     <Captcha ref={captchaRef} />
 
                                                                     <TextField

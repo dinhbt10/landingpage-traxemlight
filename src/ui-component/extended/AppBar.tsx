@@ -1,6 +1,5 @@
 import React, { ReactElement, useState } from 'react';
 
-// material-ui
 import { useTheme } from '@mui/material/styles';
 import {
     AppBar as MuiAppBar,
@@ -25,14 +24,12 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { FormattedMessage } from 'react-intl';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
-import LoginIcon from '@mui/icons-material/Login'; // project imports
+import LoginIcon from '@mui/icons-material/Login';
 import Logo from 'ui-component/Logo';
 
-// assets
 import { IconBook, IconCreditCard, IconDashboard, IconHome2 } from '@tabler/icons';
 import menuTXL from 'assets/images/landing/Home/MenuTXL.svg';
 
-// elevation scroll
 interface ElevationScrollProps {
     children: ReactElement;
     window?: Window | Node;
@@ -59,10 +56,7 @@ function ElevationScroll({ children, window }: ElevationScrollProps) {
 }
 
 const nav = [
-    // { id: 'summaryIntro', name: 'Giới thiệu', key: 0 },
-    // { id: 'summaryIntro', name: <FormattedMessage id="hd_intro" />, key: 0 },
-    { id: 'summaryIntro', name: 'Giới thiệu', key: 0 },
-
+    { id: 'summaryIntro', name: <FormattedMessage id="hd_intro" />, key: 0 },
     { id: 'benefit', name: <FormattedMessage id="hd_benefit" />, key: 1 },
     { id: 'feature', name: <FormattedMessage id="hd_feature" />, key: 2 },
     { id: 'procedure', name: <FormattedMessage id="hd_procedure" />, key: 3 },
@@ -70,12 +64,9 @@ const nav = [
     { id: 'contact', name: <FormattedMessage id="hd_contact" />, key: 5 }
 ];
 
-// ==============================|| MINIMAL LAYOUT APP BAR ||============================== //
-
 const AppBar = ({ ...others }) => {
     const [drawerToggle, setDrawerToggle] = React.useState<boolean>(false);
     const [isActive, setIsActive] = useState(0);
-    /** Method called on multiple components with different event types */
     const drawerToggler = (open: boolean) => (event: any) => {
         if (event.type! === 'keydown' && (event.key! === 'Tab' || event.key! === 'Shift')) {
             return;
@@ -95,7 +86,6 @@ const AppBar = ({ ...others }) => {
     };
 
     const [anchorEl, setAnchorEl] = useState(null);
-    // const [selectedLanguage, setSelectedLanguage] = useState('dr_vi');
 
     const handleClick = (event: any) => {
         setAnchorEl(event.currentTarget);
@@ -104,11 +94,6 @@ const AppBar = ({ ...others }) => {
     const handleClose = () => {
         setAnchorEl(null);
     };
-
-    // const handleMenuItemClick = (language: any) => {
-    //     setSelectedLanguage(language);
-    //     handleClose();
-    // };
 
     return (
         <ElevationScroll {...others}>
@@ -170,7 +155,6 @@ const AppBar = ({ ...others }) => {
                                 '@media (max-width: 1279px)': { display: 'none' }
                             }}
                         >
-                            {/* <div> */}
                             <Button
                                 sx={{
                                     marginRight: '10px',

@@ -10,7 +10,6 @@ const FooterPage = () => {
     return (
         <Box
             sx={{
-                // width: '100vw',
                 marginTop: '30px',
                 marginBottom: '30px',
                 display: 'flex',

@@ -36,11 +36,7 @@ const typographyStyle2 = {
 };
 
 function Price() {
-    // const [isActive, setIsActive] = useState(0);
     const handleScrollToSection = (sectionId: string, key?: number) => {
-        // if (key || key === 0) {
-        //     setIsActive(key);
-        // }
         const section = document.getElementById(sectionId);
         if (section) {
             const topOffset = section.offsetTop - 110;
@@ -57,7 +53,6 @@ function Price() {
                             <FormattedMessage id="price_h1" />
                         </h1>
                         <br />
-                        {/* <Box display="flex" flexWrap="wrap"> */}
                         <Box
                             sx={{
                                 overflowX: 'auto',
@@ -66,13 +61,8 @@ function Price() {
                                 '&::-webkit-scrollbar': {
                                     height: '6px'
                                 }
-                                // '&::-webkit-scrollbar-thumb': {
-                                //     backgroundColor: '#888',
-                                //     borderRadius: '3px'
-                                // }
                             }}
                         >
-                            {/* <Grid container item xs={12} sm={12} md={12} spacing={2}> */}
                             <Grid
                                 container
                                 spacing={2}
@@ -286,7 +276,7 @@ function Price() {
                                                         <FormattedMessage id="btnBuy" />
                                                     </Typography>
                                                 </Button>
-                                            </Box>{' '}
+                                            </Box>
                                         </Box>
                                     </Typography>
                                 </Grid>

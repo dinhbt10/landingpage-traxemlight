@@ -4,8 +4,6 @@ import { styled } from '@mui/system';
 import { APP_CODE, CAPT_KEY, AUTH_GATE_API } from '../constants/index';
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
 
-// const random = () => crypto.randomUUID();
-
 const RefreshButton = styled('button')({
     background: 'unset',
     border: 'none',

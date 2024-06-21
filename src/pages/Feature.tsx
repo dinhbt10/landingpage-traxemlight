@@ -13,7 +13,6 @@ const Feature = () => {
                 <Container>
                     <Grid mt="80px" fontFamily="Montserrat">
                         <h1 style={{ textAlign: 'center', fontWeight: '600', fontSize: '32px', color: 'black' }}>
-                            {' '}
                             <FormattedMessage id="ft_h1" />
                         </h1>
                         <Grid container item xs={12} sm={12} md={12}>

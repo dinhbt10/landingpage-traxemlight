@@ -7,13 +7,12 @@ const Benefit = () => {
         <>
             <section
                 id="benefit"
-                // style={{ background: 'linear-gradient(180deg, #FFDFBF 0%, #FFFCF8 100%)' }}
                 className="home__summary"
                 style={{
                     backgroundImage: `url(${backgroundBenefit})`,
-                    backgroundSize: 'cover', // Ensures the image covers the entire section
-                    backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-                    backgroundPosition: 'center' // Centers the image
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center'
                 }}
             >
                 <Container>
@@ -38,7 +37,6 @@ const Benefit = () => {
                                 </Typography>
                                 <br />
                                 <Typography
-                                    // fontFamily="Montserrat"
                                     fontWeight="500"
                                     color="white"
                                     width="100%"

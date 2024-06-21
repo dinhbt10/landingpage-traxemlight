@@ -5,11 +5,7 @@ import { FormattedMessage } from 'react-intl';
 const SumIntro = () => {
     return (
         <>
-            <section
-                id="summaryIntro"
-                // style={{ background: 'linear-gradient(180deg, #FFDFBF 0%, #FFFCF8 100%)' }}
-                className="home__summary"
-            >
+            <section id="summaryIntro" className="home__summary">
                 <Container>
                     <Grid
                         mt="80px"
